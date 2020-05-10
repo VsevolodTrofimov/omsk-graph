@@ -1,0 +1,4694 @@
+[
+    {
+        "tags": {
+            "name": "Городской клинический перинатальный центр",
+            "amenity": "hospital"
+        },
+        "id": "496176426",
+        "lat": 54.9792304,
+        "lon": 73.4042384,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская поликлиника №6",
+            "amenity": "hospital",
+            "alt_name": "Hospital #6"
+        },
+        "id": "574705224",
+        "lat": 54.9969312,
+        "lon": 73.263194,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "doctors"
+        },
+        "id": "928822236",
+        "lat": 55.0269211,
+        "lon": 73.2953684,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника. ФГУ Западно-Сибирский Медицинский Центр ФМБА России",
+            "amenity": "hospital"
+        },
+        "id": "993403877",
+        "lat": 55.0087681,
+        "lon": 73.3415964,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омская центральная районная больница",
+            "amenity": "hospital"
+        },
+        "id": "1083500609",
+        "lat": 55.0376719,
+        "lon": 73.3266533,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская городская больница №4",
+            "amenity": "hospital"
+        },
+        "id": "1170654926",
+        "lat": 55.0269675,
+        "lon": 73.4172557,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №3 на станции Московка",
+            "amenity": "hospital"
+        },
+        "id": "1187668213",
+        "lat": 54.9274889,
+        "lon": 73.4705159,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская больница №2",
+            "amenity": "clinic"
+        },
+        "id": "1195460350",
+        "lat": 54.9571625,
+        "lon": 73.4057164,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №5",
+            "amenity": "hospital"
+        },
+        "id": "1199849990",
+        "lat": 54.9591278,
+        "lon": 73.4125215,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Д/П№5(филиал3)",
+            "amenity": "hospital"
+        },
+        "id": "1199938577",
+        "lat": 54.9500298,
+        "lon": 73.418569,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ж/К№4",
+            "amenity": "hospital"
+        },
+        "id": "1201196935",
+        "lat": 54.9783978,
+        "lon": 73.4648115,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №5 (филиал 2)",
+            "amenity": "clinic"
+        },
+        "id": "1201892219",
+        "lat": 54.9759665,
+        "lon": 73.4109102,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "МСЧ№11",
+            "amenity": "hospital"
+        },
+        "id": "1208615740",
+        "lat": 55.0142474,
+        "lon": 73.4212112,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Центр лабораторной диагностики Медакадемии",
+            "amenity": "hospital"
+        },
+        "id": "1296113631",
+        "lat": 54.9764532,
+        "lon": 73.4063785,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Областная детская клиническая больница. Консультативно-диагностическая поликлиника.",
+            "amenity": "hospital"
+        },
+        "id": "1296113649",
+        "lat": 54.9790343,
+        "lon": 73.3987421,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Инвитро",
+            "amenity": "doctors",
+            "website": "http://www.invitro.ru/",
+            "healthcare": "laboratory",
+            "description": "Независимая лаборатория, медицинские анализы",
+            "healthcare:speciality": "biology"
+        },
+        "id": "1296231525",
+        "lat": 54.9817793,
+        "lon": 73.395375,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская больница №9",
+            "amenity": "hospital",
+            "healthcare": "hospital"
+        },
+        "id": "1448225165",
+        "lat": 54.9472085,
+        "lon": 73.3366604,
+        "version": 1
+    },
+    {
+        "tags": {
+            "ref": "6",
+            "name": "Клинический родильный дом №6",
+            "amenity": "hospital"
+        },
+        "id": "1460258723",
+        "lat": 54.9945994,
+        "lon": 73.2944632,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омская городская клиническая больница №1",
+            "amenity": "hospital"
+        },
+        "id": "1460258726",
+        "lat": 54.9960401,
+        "lon": 73.2931275,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "БУЗОО \"Клинический кожно-венерологический диспансер\"",
+            "amenity": "hospital"
+        },
+        "id": "1502867085",
+        "lat": 54.9812038,
+        "lon": 73.4036015,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №10",
+            "amenity": "doctors"
+        },
+        "id": "1502918675",
+        "lat": 54.9112012,
+        "lon": 73.4506583,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Женская консультация",
+            "amenity": "doctors"
+        },
+        "id": "1503783800",
+        "lat": 54.9119461,
+        "lon": 73.4474862,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №7",
+            "amenity": "clinic"
+        },
+        "id": "1609911627",
+        "lat": 54.9716209,
+        "lon": 73.4776138,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника, ОмГКБ №1",
+            "amenity": "hospital"
+        },
+        "id": "1664246920",
+        "lat": 54.9879809,
+        "lon": 73.3215802,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Центр психологии",
+            "amenity": "doctors",
+            "healthcare": "psychotherapist"
+        },
+        "id": "2076014841",
+        "lat": 54.975097,
+        "lon": 73.3989835,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская городская поликлиника №1",
+            "amenity": "doctors"
+        },
+        "id": "2103672859",
+        "lat": 55.0471299,
+        "lon": 73.2919409,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Клинический кожно-венерологический диспансер",
+            "amenity": "doctors"
+        },
+        "id": "2210846663",
+        "lat": 54.9905626,
+        "lon": 73.2613755,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омский областной наркологический диспансер",
+            "amenity": "doctors"
+        },
+        "id": "2296917824",
+        "lat": 54.9622111,
+        "lon": 73.3949963,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Клинический диагностический центр",
+            "amenity": "clinic"
+        },
+        "id": "2321437591",
+        "lat": 54.9793504,
+        "lon": 73.3755025,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская поликлиника №10",
+            "amenity": "clinic"
+        },
+        "id": "2487588713",
+        "lat": 54.9246307,
+        "lon": 73.4679457,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №4",
+            "amenity": "clinic",
+            "addr:street": "Мельничная улица",
+            "addr:housenumber": "11"
+        },
+        "id": "2488924250",
+        "lat": 54.9305104,
+        "lon": 73.3236422,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №9",
+            "amenity": "clinic"
+        },
+        "id": "2565850376",
+        "lat": 54.9308968,
+        "lon": 73.3742047,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "clinic"
+        },
+        "id": "2583166436",
+        "lat": 54.9516659,
+        "lon": 73.3835776,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №2",
+            "amenity": "clinic"
+        },
+        "id": "2988959921",
+        "lat": 54.952658,
+        "lon": 73.3804354,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №1",
+            "amenity": "clinic"
+        },
+        "id": "3015644536",
+        "lat": 54.9851251,
+        "lon": 73.3737297,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ИнтерВзгляд",
+            "email": "ivzreg@mail.ru",
+            "phone": "+73812665555",
+            "amenity": "clinic",
+            "website": "http://интервзгляд.рф/",
+            "addr:street": "улица Лермонтова",
+            "opening_hours": "Mo-Fr 09:00-18:00; Sa 09:00-15:00",
+            "addr:housenumber": "77"
+        },
+        "id": "3016666184",
+        "lat": 54.9835894,
+        "lon": 73.3983934,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Отделение №2 поликлиники №15",
+            "amenity": "clinic"
+        },
+        "id": "3045090088",
+        "lat": 54.9602761,
+        "lon": 73.379985,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №8",
+            "amenity": "clinic"
+        },
+        "id": "3045090089",
+        "lat": 54.9598769,
+        "lon": 73.3799563,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Доктор САШ",
+            "amenity": "clinic"
+        },
+        "id": "3092176963",
+        "lat": 54.9944207,
+        "lon": 73.3791844,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Евромед",
+            "amenity": "clinic",
+            "name:en": "Euromed"
+        },
+        "id": "3092176964",
+        "lat": 55.004732,
+        "lon": 73.3373797,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская городская поликлиника №6",
+            "amenity": "clinic"
+        },
+        "id": "3106321014",
+        "lat": 54.9428188,
+        "lon": 73.3839702,
+        "version": 1
+    },
+    {
+        "tags": {
+            "ref": "11",
+            "name": "Детская поликлиника №11 (филиал)",
+            "amenity": "clinic"
+        },
+        "id": "3124193009",
+        "lat": 55.0285965,
+        "lon": 73.2995298,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №4",
+            "amenity": "doctors"
+        },
+        "id": "3124193011",
+        "lat": 55.0279797,
+        "lon": 73.2933649,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "УЗИ-Диагностика",
+            "amenity": "doctors"
+        },
+        "id": "3174829592",
+        "lat": 54.9969587,
+        "lon": 73.3557128,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская городская поликлиника №7",
+            "amenity": "clinic"
+        },
+        "id": "3259274701",
+        "lat": 54.9588573,
+        "lon": 73.4508739,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ультрамед",
+            "amenity": "clinic",
+            "opening_hours": "Mo-Sa 08:00-20:00; Su 08:00-16:00"
+        },
+        "id": "3647548357",
+        "lat": 54.9788231,
+        "lon": 73.3834577,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Гинекология",
+            "amenity": "doctors",
+            "health_specialty:gynaecology": "yes"
+        },
+        "id": "3905293750",
+        "lat": 54.9709319,
+        "lon": 73.3986638,
+        "version": 1
+    },
+    {
+        "tags": {
+            "fee": "yes",
+            "name": "Моя клиника",
+            "amenity": "doctors"
+        },
+        "id": "3931749428",
+        "lat": 55.0304623,
+        "lon": 73.2785016,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Авиценна",
+            "amenity": "doctors"
+        },
+        "id": "4019343851",
+        "lat": 55.0268298,
+        "lon": 73.28339,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Профи-Мед",
+            "amenity": "doctors"
+        },
+        "id": "4020087675",
+        "lat": 54.9975308,
+        "lon": 73.3731883,
+        "version": 1
+    },
+    {
+        "tags": {
+            "fee": "yes",
+            "name": "Центр доктора Шеремета",
+            "amenity": "doctors"
+        },
+        "id": "4047550777",
+        "lat": 55.0282362,
+        "lon": 73.277428,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аполлон",
+            "amenity": "doctors"
+        },
+        "id": "4092368909",
+        "lat": 54.9965485,
+        "lon": 73.3581807,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ультрамед",
+            "amenity": "clinic"
+        },
+        "id": "4092590388",
+        "lat": 54.9841368,
+        "lon": 73.3767223,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Новая клиника",
+            "amenity": "doctors"
+        },
+        "id": "4111767005",
+        "lat": 55.0058095,
+        "lon": 73.3472168,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Боттичелли",
+            "amenity": "doctors"
+        },
+        "id": "4161293889",
+        "lat": 54.9608322,
+        "lon": 73.3866113,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Линлайн",
+            "phone": "+7 800 700-79-11;+7 381 292-10-00",
+            "amenity": "doctors",
+            "website": "https://www.linline-clinic.ru/",
+            "healthcare": "doctor",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "4161293902",
+        "lat": 54.9544672,
+        "lon": 73.3873044,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Евромед",
+            "amenity": "clinic"
+        },
+        "id": "4174380486",
+        "lat": 55.0076196,
+        "lon": 73.3358322,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ультрамед",
+            "amenity": "clinic"
+        },
+        "id": "4189288548",
+        "lat": 54.9732118,
+        "lon": 73.3772332,
+        "version": 1
+    },
+    {
+        "tags": {
+            "ref": "2",
+            "name": "Городская поликлиника №2",
+            "amenity": "clinic"
+        },
+        "id": "4201634536",
+        "lat": 55.00205,
+        "lon": 73.455568,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ЛОР-клиника",
+            "amenity": "doctors",
+            "alt_name": "Многопрофильный центр слуха и речи",
+            "int_name": "ENT Clinic \"Comprehensive Hearing and Speech Center\"",
+            "emergency": "no",
+            "health_specialty:otolaryngology": "yes"
+        },
+        "id": "4208923513",
+        "lat": 54.972989,
+        "lon": 73.4063575,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ангио центр",
+            "amenity": "doctors"
+        },
+        "id": "4219992639",
+        "lat": 54.9730002,
+        "lon": 73.3925987,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "АртМед",
+            "amenity": "clinic"
+        },
+        "id": "4239998104",
+        "lat": 54.9851288,
+        "lon": 73.3923972,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская больница №3, инфекционный стационар",
+            "amenity": "hospital",
+            "provided_for:adult": "no",
+            "provided_for:child": "yes"
+        },
+        "id": "4264243305",
+        "lat": 55.0345678,
+        "lon": 73.2756431,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская больница №3, хирургический стационар",
+            "amenity": "hospital",
+            "provided_for:adult": "no",
+            "provided_for:child": "yes"
+        },
+        "id": "4264243306",
+        "lat": 55.0351415,
+        "lon": 73.2775914,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детский травмпункт",
+            "amenity": "doctors",
+            "emergency": "yes",
+            "provided_for:adult": "no",
+            "provided_for:child": "yes"
+        },
+        "id": "4264243307",
+        "lat": 55.0341041,
+        "lon": 73.2774821,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Женская консультация №1 роддома №2",
+            "amenity": "clinic"
+        },
+        "id": "4264243308",
+        "lat": 55.0346122,
+        "lon": 73.2801898,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника городской больницы №3",
+            "amenity": "clinic"
+        },
+        "id": "4264243314",
+        "lat": 55.0355037,
+        "lon": 73.2799379,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника №1 детской городской больницы №3",
+            "amenity": "clinic",
+            "provided_for:adult": "no",
+            "provided_for:child": "yes"
+        },
+        "id": "4264243315",
+        "lat": 55.034043,
+        "lon": 73.277603,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Родильный дом №2",
+            "amenity": "hospital"
+        },
+        "id": "4264243317",
+        "lat": 55.0360931,
+        "lon": 73.2791301,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Травмпункт",
+            "amenity": "doctors",
+            "emergency": "yes",
+            "provided_for:adult": "yes",
+            "provided_for:child": "no"
+        },
+        "id": "4264243318",
+        "lat": 55.0356445,
+        "lon": 73.2798292,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Emerald",
+            "amenity": "doctors",
+            "health_specialty:dermatology": "yes"
+        },
+        "id": "4293130360",
+        "lat": 54.9750024,
+        "lon": 73.3865815,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "clinic"
+        },
+        "id": "4368264492",
+        "lat": 54.942894,
+        "lon": 73.3929913,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Клинический медико-хирургический центр",
+            "email": "info@clinica-omsk.ru",
+            "phone": "83812255439",
+            "amenity": "hospital",
+            "website": "http://clinica-omsk.ru",
+            "addr:street": "улица Булатова",
+            "addr:postcode": "644007",
+            "opening_hours": "24/7",
+            "internet_access": "wlan",
+            "addr:housenumber": "105"
+        },
+        "id": "4423439390",
+        "lat": 54.9948596,
+        "lon": 73.3809299,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника 13",
+            "amenity": "clinic",
+            "name:ru": "Поликлиника 13",
+            "opening_hours": "Mo-Fr 08:00-20:00"
+        },
+        "id": "4560969889",
+        "lat": 55.026881,
+        "lon": 73.3639254,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Центр доктора Бубновского",
+            "amenity": "doctors"
+        },
+        "id": "4582999771",
+        "lat": 55.0016056,
+        "lon": 73.3520977,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская поликлиника №8",
+            "amenity": "clinic"
+        },
+        "id": "4746245542",
+        "lat": 55.0214449,
+        "lon": 73.412857,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Золотая лилия",
+            "amenity": "doctors"
+        },
+        "id": "4751207578",
+        "lat": 54.9749332,
+        "lon": 73.4067023,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская поликлиника №15",
+            "amenity": "clinic"
+        },
+        "id": "4784526802",
+        "lat": 54.9684928,
+        "lon": 73.3872161,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Первая социальная клиника",
+            "amenity": "doctors",
+            "name:ru": "Первая социальная клиника",
+            "opening_hours": "Mo-Fr 10:00-18:00; Sa 10:00-13:00"
+        },
+        "id": "4877025321",
+        "lat": 55.0274639,
+        "lon": 73.2602028,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Консультативно-диагностическая поликлиника",
+            "amenity": "clinic",
+            "contact:phone": "+7 381 2363634",
+            "opening_hours": "Mo-Fr 08:30-16:00"
+        },
+        "id": "4918261639",
+        "lat": 54.979156,
+        "lon": 73.4036989,
+        "version": 1
+    },
+    {
+        "tags": {
+            "fee": "yes",
+            "name": "До 16-ти",
+            "amenity": "clinic",
+            "massage": "yes",
+            "healthcare": "centre",
+            "treat:inpatient": "no",
+            "provided_for:adult": "no",
+            "provided_for:child": "yes",
+            "health_service:test": "yes",
+            "health_specialty:surgery": "yes",
+            "health_specialty:urology": "yes",
+            "health_service:counselling": "yes",
+            "health_service:examination": "yes",
+            "health_specialty:dentistry": "yes",
+            "health_specialty:neurology": "yes",
+            "health_specialty:cardiology": "yes",
+            "health_specialty:nephrology": "yes",
+            "health_specialty:gynaecology": "yes",
+            "health_specialty:paediatrics": "yes",
+            "health_specialty:pulmonology": "yes",
+            "health_specialty:biochemistry": "yes",
+            "health_specialty:orthopaedics": "yes",
+            "health_specialty:endocrinology": "yes",
+            "health_specialty:ophthalmology": "yes",
+            "health_specialty:physiotherapy": "yes",
+            "health_specialty:otolaryngology": "yes",
+            "health_specialty:speech_therapy": "yes",
+            "health_specialty:child_psychiatry": "yes",
+            "health_specialty:gastroenterology": "yes",
+            "health_specialty:internal_medicine": "yes"
+        },
+        "id": "4973404087",
+        "lat": 55.0017013,
+        "lon": 73.3521509,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника МСЧ №7",
+            "amenity": "clinic"
+        },
+        "id": "4999064492",
+        "lat": 55.0325936,
+        "lon": 73.2219566,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Городская больница №3, стационар",
+            "amenity": "hospital"
+        },
+        "id": "5048963898",
+        "lat": 55.0281636,
+        "lon": 73.2748604,
+        "version": 1
+    },
+    {
+        "tags": {
+            "fee": "yes",
+            "name": "Ультрамед",
+            "amenity": "clinic",
+            "internet_access": "wlan",
+            "provided_for:adult": "no",
+            "provided_for:child": "yes"
+        },
+        "id": "5152371724",
+        "lat": 54.9742536,
+        "lon": 73.3767795,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Центр здоровья поликлиники № 4",
+            "amenity": "doctors"
+        },
+        "id": "5153260965",
+        "lat": 55.0410793,
+        "lon": 73.2933552,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Врачебно-косметологическая лечебница",
+            "amenity": "clinic",
+            "health_specialty:dermatology": "yes"
+        },
+        "id": "5350854860",
+        "lat": 54.9479855,
+        "lon": 73.3782757,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Академия здоровья",
+            "amenity": "clinic"
+        },
+        "id": "5383412637",
+        "lat": 54.9927634,
+        "lon": 73.2929364,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "doctors"
+        },
+        "id": "5383412647",
+        "lat": 54.9924233,
+        "lon": 73.2720458,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №4",
+            "amenity": "clinic",
+            "healthcare": "clinic",
+            "addr:street": "улица 12 Декабря",
+            "addr:housenumber": "106"
+        },
+        "id": "5400978123",
+        "lat": 54.9510132,
+        "lon": 73.3315326,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Женская консультация, ГБ№9",
+            "amenity": "hospital",
+            "healthcare": "hospital",
+            "addr:street": "улица 12 Декабря",
+            "addr:housenumber": "102"
+        },
+        "id": "5400978129",
+        "lat": 54.9491124,
+        "lon": 73.3329917,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Стоматологическая поликлиника, Городская больница №9",
+            "amenity": "hospital",
+            "healthcare": "hospital",
+            "addr:street": "Мельничная улица",
+            "addr:housenumber": "71"
+        },
+        "id": "5482417721",
+        "lat": 54.9178926,
+        "lon": 73.3181335,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Поликлиника, ГБ №9",
+            "amenity": "clinic",
+            "healthcare": "clinic",
+            "addr:street": "Мельничная улица",
+            "addr:housenumber": "92"
+        },
+        "id": "5487724215",
+        "lat": 54.9158339,
+        "lon": 73.3148069,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "СитиМед",
+            "phone": "483838",
+            "amenity": "clinic",
+            "name:en": "CityMed",
+            "website": "http://citymed55.ru"
+        },
+        "id": "5510553321",
+        "lat": 54.9494767,
+        "lon": 73.3900817,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "МаксиМед",
+            "amenity": "clinic"
+        },
+        "id": "5908479087",
+        "lat": 54.9802181,
+        "lon": 73.2987669,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Варикоза Нет",
+            "amenity": "clinic",
+            "opening_hours": "Mo-Su 08:00-20:00"
+        },
+        "id": "5999894487",
+        "lat": 54.9879458,
+        "lon": 73.3970161,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омская областная клиническая больница",
+            "amenity": "hospital"
+        },
+        "id": "6006723760",
+        "lat": 55.0213924,
+        "lon": 73.3405638,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Центр медосмотров Евромед",
+            "amenity": "clinic"
+        },
+        "id": "6445837578",
+        "lat": 54.9767194,
+        "lon": 73.3821201,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фомальгаут",
+            "amenity": "doctors"
+        },
+        "id": "6541875549",
+        "lat": 54.9632361,
+        "lon": 73.3890206,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ООО «Медицинский центр «Гирутек»",
+            "email": "info@girutek.ru",
+            "phone": "+73812790599",
+            "amenity": "clinic",
+            "name:en": "Polyclinic “Girutek”",
+            "website": "https://girutek.ru",
+            "addr:postcode": "644012",
+            "opening_hours": "Mo-Fr 08:00-18:00; Sa 08:00-16:00",
+            "internet_access": "wlan",
+            "addr:housenumber": "7 пом2П"
+        },
+        "id": "6725825186",
+        "lat": 55.0343061,
+        "lon": 73.3320301,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ООО «Медицинский центр «Гирутек»",
+            "email": "info@girutek.ru",
+            "phone": "+73812790599",
+            "amenity": "clinic",
+            "name:en": "Polyclinic “Girutek”",
+            "website": "https://girutek.ru",
+            "addr:postcode": "644106",
+            "opening_hours": "Mo-Fr 07:30-19:00; Sa 07:30-16:00; Su 09:00-12:30",
+            "internet_access": "wlan",
+            "addr:housenumber": "8 пом8П"
+        },
+        "id": "6725825187",
+        "lat": 54.9944212,
+        "lon": 73.258894,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Детская поликлиника №3",
+            "amenity": "clinic"
+        },
+        "id": "6945562506",
+        "lat": 55.0536243,
+        "lon": 73.3106625,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "fire_station"
+        },
+        "id": "536393610",
+        "lat": 55.0327613,
+        "lon": 73.2722374,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "7 ПЧ 4 ОФПС",
+            "amenity": "fire_station"
+        },
+        "id": "1083500500",
+        "lat": 55.038002,
+        "lon": 73.3237985,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "fire_station"
+        },
+        "id": "1202905191",
+        "lat": 54.9421702,
+        "lon": 73.4325009,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Специализированная пожарно-спасательная часть ФПС по Омской области",
+            "amenity": "fire_station"
+        },
+        "id": "1503824107",
+        "lat": 54.9178892,
+        "lon": 73.4585204,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "fire_station"
+        },
+        "id": "1669529308",
+        "lat": 55.0231159,
+        "lon": 73.383979,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омский учебный центр ФПС",
+            "amenity": "fire_station"
+        },
+        "id": "1823532920",
+        "lat": 55.0014281,
+        "lon": 73.383836,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "1 пожарная часть",
+            "amenity": "fire_station"
+        },
+        "id": "3524852775",
+        "lat": 54.9788009,
+        "lon": 73.3856042,
+        "version": 1
+    },
+    {
+        "tags": {
+            "ref": "34",
+            "amenity": "fire_station"
+        },
+        "id": "5353897457",
+        "lat": 54.9979536,
+        "lon": 73.4785607,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Пожарный поезд ст. Комбинатская",
+            "source": "http://npd-upss2.narod.ru/Reestr_Fed/070412.htm",
+            "amenity": "fire_station",
+            "operator": "ФГП «Ведомственная охрана железнодорожного транспорта Российской Федерации» (Западно-Сибирская железная дорога)",
+            "addr:country": "RU",
+            "fire_station:type": "vpo"
+        },
+        "id": "5654157884",
+        "lat": 55.0624917,
+        "lon": 73.2976056,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Пожарный поезд ст. Омск-Пассажирский",
+            "source": "http://npd-upss2.narod.ru/Reestr_Fed/070412.htm",
+            "amenity": "fire_station",
+            "operator": "ФГП «Ведомственная охрана железнодорожного транспорта Российской Федерации» (Западно-Сибирская железная дорога)",
+            "addr:country": "RU",
+            "fire_station:type": "vpo"
+        },
+        "id": "5654157885",
+        "lat": 54.9388806,
+        "lon": 73.3883139,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ваша аптечка",
+            "amenity": "pharmacy"
+        },
+        "id": "791129402",
+        "lat": 55.0428531,
+        "lon": 73.3303101,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "791129405",
+        "lat": 55.0415929,
+        "lon": 73.3296127,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ВитаМин",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "09:00-20:45"
+        },
+        "id": "867818717",
+        "lat": 54.9800188,
+        "lon": 73.3147999,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омское лекарство",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "Mo-Fr 10:00-18:00"
+        },
+        "id": "919499290",
+        "lat": 54.9733161,
+        "lon": 73.44938,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-21:00; Sa-Su 09:00-21:00"
+        },
+        "id": "926529095",
+        "lat": 55.0243461,
+        "lon": 73.3019906,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека №160",
+            "amenity": "pharmacy",
+            "operator": "Омское лекарство",
+            "wheelchair": "yes",
+            "opening_hours": "Mo-Fr 08:00-20:00; Sa 09:00-20:00; Su 09:00-19:00"
+        },
+        "id": "926537834",
+        "lat": 55.0279561,
+        "lon": 73.2890695,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-21:00"
+        },
+        "id": "928309488",
+        "lat": 55.0255387,
+        "lon": 73.2956808,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Холди",
+            "was:shop": "supermarket",
+            "opening_hours": "08:00-24:00"
+        },
+        "id": "928313319",
+        "lat": 55.0283034,
+        "lon": 73.2999027,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омсквинпром",
+            "operator": "ООО Алкомаркет",
+            "was:shop": "alcohol",
+            "opening_hours": "10:00-22:00"
+        },
+        "id": "928313329",
+        "lat": 55.0243523,
+        "lon": 73.2990374,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Строитель",
+            "level": "-1",
+            "was:shop": "doityourself"
+        },
+        "id": "930245958",
+        "lat": 55.0273624,
+        "lon": 73.2907686,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "ТК Флагман",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "946451732",
+        "lat": 54.9937547,
+        "lon": 73.3725484,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "985235115",
+        "lat": 54.9853904,
+        "lon": 73.399674,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "985235313",
+        "lat": 54.9816521,
+        "lon": 73.3816569,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "1025899681",
+        "lat": 55.0430626,
+        "lon": 73.3148318,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "contact:phone": "+7(3812) 72-50-12",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "1062451072",
+        "lat": 55.0041769,
+        "lon": 73.2960256,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Социальная",
+            "amenity": "pharmacy"
+        },
+        "id": "1156346762",
+        "lat": 54.995338,
+        "lon": 73.2440632,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Здрава",
+            "amenity": "pharmacy"
+        },
+        "id": "1156346788",
+        "lat": 54.9954011,
+        "lon": 73.2429233,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Будьте здоровы",
+            "amenity": "pharmacy"
+        },
+        "id": "1160722616",
+        "lat": 54.9970507,
+        "lon": 73.2414665,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "аптека №132",
+            "amenity": "pharmacy"
+        },
+        "id": "1170654946",
+        "lat": 55.0216538,
+        "lon": 73.418747,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Биофарм",
+            "amenity": "pharmacy"
+        },
+        "id": "1190556624",
+        "lat": 55.0422739,
+        "lon": 73.3234771,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Забота",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1195314813",
+        "lat": 54.9492837,
+        "lon": 73.4256873,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1195460335",
+        "lat": 54.9564309,
+        "lon": 73.4138298,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "№219",
+            "amenity": "pharmacy"
+        },
+        "id": "1201192565",
+        "lat": 54.949961,
+        "lon": 73.4183689,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1201196931",
+        "lat": 54.9789213,
+        "lon": 73.4652244,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Оптика. Аптечный пункт.",
+            "shop": "optician",
+            "amenity": "pharmacy"
+        },
+        "id": "1296113673",
+        "lat": 54.9822408,
+        "lon": 73.3930887,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "1296113679",
+        "lat": 54.9823317,
+        "lon": 73.3891241,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека",
+            "amenity": "pharmacy",
+            "operator": "Омское лекарство",
+            "dispensing": "no"
+        },
+        "id": "1296231509",
+        "lat": 54.9810828,
+        "lon": 73.4100852,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1320557808",
+        "lat": 54.9970596,
+        "lon": 73.357485,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "1320557826",
+        "lat": 54.9975471,
+        "lon": 73.3569109,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1438094966",
+        "lat": 54.9990492,
+        "lon": 73.3591988,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Для Вас",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1438094972",
+        "lat": 55.0238365,
+        "lon": 73.407908,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1438094973",
+        "lat": 55.0345658,
+        "lon": 73.4463282,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "1448225162",
+        "lat": 54.9510718,
+        "lon": 73.3282275,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Электронный рай",
+            "was:shop": "electronics"
+        },
+        "id": "1457873400",
+        "lat": 54.9753035,
+        "lon": 73.341282,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Для Вас",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1474822620",
+        "lat": 54.9747715,
+        "lon": 73.410435,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "car",
+            "description": "Японские автозапчасти"
+        },
+        "id": "1483324178",
+        "lat": 54.9791658,
+        "lon": 73.3391458,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "1487221156",
+        "lat": 55.0294423,
+        "lon": 73.2718675,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Здрава",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1487221166",
+        "lat": 55.0230329,
+        "lon": 73.3773612,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1487221233",
+        "lat": 54.9916894,
+        "lon": 73.2973315,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1487221235",
+        "lat": 55.0292005,
+        "lon": 73.2485098,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "24/7"
+        },
+        "id": "1487221237",
+        "lat": 55.0435299,
+        "lon": 73.3250501,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека \"Семейная\"",
+            "amenity": "pharmacy"
+        },
+        "id": "1503748690",
+        "lat": 54.9092509,
+        "lon": 73.4484891,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека",
+            "amenity": "pharmacy"
+        },
+        "id": "1503748694",
+        "lat": 54.9089117,
+        "lon": 73.447443,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека",
+            "amenity": "pharmacy"
+        },
+        "id": "1503748722",
+        "lat": 54.9093126,
+        "lon": 73.4482692,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека \"Натур Продукт\"",
+            "amenity": "pharmacy"
+        },
+        "id": "1503748737",
+        "lat": 54.9090782,
+        "lon": 73.4522066,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Древо жизни",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1527716428",
+        "lat": 54.9788116,
+        "lon": 73.310555,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Монель",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1557990152",
+        "lat": 54.9817699,
+        "lon": 73.3863417,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Медтехника",
+            "was:shop": "medical_supply"
+        },
+        "id": "1572423860",
+        "lat": 54.996843,
+        "lon": 73.3577402,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека \"Здрава\"",
+            "amenity": "pharmacy"
+        },
+        "id": "1583542359",
+        "lat": 55.0443739,
+        "lon": 73.316819,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "1606213082",
+        "lat": 55.040919,
+        "lon": 73.3137316,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Забота",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1612874556",
+        "lat": 54.947249,
+        "lon": 73.3365829,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "computer",
+            "description": "ДНС",
+            "opening_hours": "Mo-Su 10:00-21:00"
+        },
+        "id": "1664246894",
+        "lat": 54.9807629,
+        "lon": 73.3208521,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Дельта",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:30-20:30"
+        },
+        "id": "1664246904",
+        "lat": 54.985562,
+        "lon": 73.3137518,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптечный пункт",
+            "amenity": "pharmacy"
+        },
+        "id": "1664246908",
+        "lat": 54.9844539,
+        "lon": 73.3189228,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "1666649421",
+        "lat": 54.9991351,
+        "lon": 73.2959074,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фиалка",
+            "amenity": "pharmacy"
+        },
+        "id": "1669529326",
+        "lat": 55.007819,
+        "lon": 73.3990063,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Натали",
+            "was:shop": "furniture"
+        },
+        "id": "1676542122",
+        "lat": 55.0378577,
+        "lon": 73.2661168,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Здоровей",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1707946115",
+        "lat": 54.9934672,
+        "lon": 73.2999021,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "tyres",
+            "description": "Автошины из Японии"
+        },
+        "id": "1720408974",
+        "lat": 54.9788415,
+        "lon": 73.3385152,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "1726886650",
+        "lat": 54.9849174,
+        "lon": 73.3009415,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Диюл",
+            "amenity": "pharmacy"
+        },
+        "id": "1735440184",
+        "lat": 54.9849763,
+        "lon": 73.3247053,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ВТВ-Авто",
+            "website": "http://vtv-auto.ucoz.com",
+            "was:shop": "car_repair"
+        },
+        "id": "1837918619",
+        "lat": 54.9894916,
+        "lon": 73.3350732,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фитос",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1875863050",
+        "lat": 55.0004304,
+        "lon": 73.2905093,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Панацея",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "1877281870",
+        "lat": 55.0219629,
+        "lon": 73.413861,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омский лекарь",
+            "amenity": "pharmacy"
+        },
+        "id": "2074288557",
+        "lat": 55.031675,
+        "lon": 73.2510498,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Биомедсервис",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-21:00; Sa,Su 10:00-19:00"
+        },
+        "id": "2155570399",
+        "lat": 54.9881489,
+        "lon": 73.3634596,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ООО Живитель",
+            "amenity": "pharmacy",
+            "dispensing": "yes",
+            "opening_hours": "09:00-19:30"
+        },
+        "id": "2199213291",
+        "lat": 54.9976697,
+        "lon": 73.3604027,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "addr:street": "улица 12 Декабря",
+            "addr:housenumber": "104"
+        },
+        "id": "2204144941",
+        "lat": 54.9500286,
+        "lon": 73.3312585,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармари",
+            "amenity": "pharmacy"
+        },
+        "id": "2210846665",
+        "lat": 54.9905615,
+        "lon": 73.2614337,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "2216314092",
+        "lat": 54.9505267,
+        "lon": 73.4530284,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека на Архитекторов",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "2264433632",
+        "lat": 54.9886409,
+        "lon": 73.3066587,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "car_repair"
+        },
+        "id": "2276467851",
+        "lat": 54.9938286,
+        "lon": 73.2558824,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптечный пункт",
+            "shop": "convenience",
+            "amenity": "pharmacy"
+        },
+        "id": "2427958026",
+        "lat": 54.9623597,
+        "lon": 73.4451005,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "level": "-1",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "2433388895",
+        "lat": 55.0283404,
+        "lon": 73.2883187,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ЮниФлор",
+            "was:shop": "florist",
+            "opening_hours": "09:00-18:00"
+        },
+        "id": "2728056968",
+        "lat": 55.0029262,
+        "lon": 73.3849618,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "2898418857",
+        "lat": 55.0264218,
+        "lon": 73.4138964,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "2911561993",
+        "lat": 54.9781871,
+        "lon": 73.3937902,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ваш фармацевт",
+            "amenity": "pharmacy"
+        },
+        "id": "2924514845",
+        "lat": 54.9958026,
+        "lon": 73.2629966,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека #182",
+            "amenity": "pharmacy",
+            "name:en": "Drugstore #182",
+            "name:ru": "Аптека #182",
+            "addr:street": "улица Фугенфирова",
+            "opening_hours": "Mo-Fr 09:00-20:00; Sa 09:00-18:00; Su 10:00-18:00",
+            "addr:housenumber": "3"
+        },
+        "id": "2924514848",
+        "lat": 54.9954008,
+        "lon": 73.2642493,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "2987454487",
+        "lat": 54.940851,
+        "lon": 73.3896678,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "ТК Оазис",
+            "bench": "yes",
+            "highway": "bus_stop",
+            "shelter": "yes",
+            "trolleybus": "yes",
+            "public_transport": "platform"
+        },
+        "id": "3126673533",
+        "lat": 54.9939893,
+        "lon": 73.257478,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "ТК Оазис",
+            "bench": "yes",
+            "highway": "bus_stop",
+            "shelter": "yes",
+            "trolleybus": "yes",
+            "public_transport": "platform"
+        },
+        "id": "3126673534",
+        "lat": 54.9942796,
+        "lon": 73.2566586,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "supermarket",
+            "description": "Холди"
+        },
+        "id": "3172219991",
+        "lat": 54.9758015,
+        "lon": 73.4236384,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "3172709861",
+        "lat": 54.9757173,
+        "lon": 73.4228227,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "addr:postcode": "644001",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "3176885006",
+        "lat": 54.9749486,
+        "lon": 73.4128226,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омское лекарство",
+            "amenity": "pharmacy"
+        },
+        "id": "3181682142",
+        "lat": 54.9973615,
+        "lon": 73.3619105,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "3212949012",
+        "lat": 54.9928314,
+        "lon": 73.3735337,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3220350738",
+        "lat": 54.947061,
+        "lon": 73.4200497,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "СТЦ Мега",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "3226782888",
+        "lat": 54.9731656,
+        "lon": 73.2923246,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "3285462159",
+        "lat": 55.0338521,
+        "lon": 73.4548193,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "3322797002",
+        "lat": 54.9498164,
+        "lon": 73.4244512,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Биомедсервис",
+            "amenity": "pharmacy"
+        },
+        "id": "3398001503",
+        "lat": 55.0254674,
+        "lon": 73.2978128,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "3420162996",
+        "lat": 54.9789114,
+        "lon": 73.3113355,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Priz",
+            "clothes": "women",
+            "was:shop": "clothes",
+            "opening_hours": "10:00-20:00"
+        },
+        "id": "3540812975",
+        "lat": 55.0246522,
+        "lon": 73.298257,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 09:00-21:00; Sa, Su 10:00-21:00"
+        },
+        "id": "3540812976",
+        "lat": 55.0253073,
+        "lon": 73.2963467,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "3540812979",
+        "lat": 55.0236951,
+        "lon": 73.3020449,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3553078076",
+        "lat": 54.9906815,
+        "lon": 73.4010039,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "наша аптека",
+            "amenity": "pharmacy"
+        },
+        "id": "3579682348",
+        "lat": 54.9854124,
+        "lon": 73.3973852,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3579682349",
+        "lat": 54.9863023,
+        "lon": 73.3972924,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "3586652150",
+        "lat": 55.0273847,
+        "lon": 73.2907059,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека №193",
+            "amenity": "pharmacy"
+        },
+        "id": "3599239645",
+        "lat": 55.035462,
+        "lon": 73.306085,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3607744875",
+        "lat": 55.0303088,
+        "lon": 73.2852363,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "55 Плюс",
+            "amenity": "pharmacy",
+            "operator": "ИП Мразовская",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "3607744879",
+        "lat": 55.0289568,
+        "lon": 73.2829956,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "3607744880",
+        "lat": 55.0288962,
+        "lon": 73.2782298,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Adidas",
+            "was:shop": "clothes"
+        },
+        "id": "3609536575",
+        "lat": 54.9806869,
+        "lon": 73.3769515,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3613222625",
+        "lat": 54.9816061,
+        "lon": 73.3808352,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Первая социальная аптека",
+            "amenity": "pharmacy"
+        },
+        "id": "3621298319",
+        "lat": 54.9618555,
+        "lon": 73.4450082,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "level": "-1",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-21:00; Sa, Su 09:00-21:00"
+        },
+        "id": "3645490496",
+        "lat": 54.974924,
+        "lon": 73.3821192,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "3645490500",
+        "lat": 54.9816676,
+        "lon": 73.3819346,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека Даром",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "3647548343",
+        "lat": 54.9971252,
+        "lon": 73.3549021,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "3676334080",
+        "lat": 55.0307541,
+        "lon": 73.2864284,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3681780393",
+        "lat": 55.0271206,
+        "lon": 73.4129338,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека на Лермонтова 20",
+            "amenity": "pharmacy"
+        },
+        "id": "3819506706",
+        "lat": 54.9816779,
+        "lon": 73.3826126,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "DNS",
+            "was:shop": "electronics"
+        },
+        "id": "3878466934",
+        "lat": 55.029536,
+        "lon": 73.2768438,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "3878466951",
+        "lat": 55.0296214,
+        "lon": 73.2707836,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Бюро путешествий",
+            "was:shop": "travel_agency"
+        },
+        "id": "3878466952",
+        "lat": 55.0295659,
+        "lon": 73.2847558,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ваша аптечка",
+            "amenity": "pharmacy"
+        },
+        "id": "3878466953",
+        "lat": 55.028449,
+        "lon": 73.2673658,
+        "version": 1
+    },
+    {
+        "tags": {
+            "ref": "20646052",
+            "name": "Магнит",
+            "name:en": "Magnit",
+            "name:ru": "Магнит",
+            "operator": "АО Тандер",
+            "was:shop": "convenience",
+            "contact:phone": "+7 800 2009002",
+            "opening_hours": "08:30-22:30",
+            "brand:wikidata": "Q940518",
+            "brand:wikipedia": "ru:Магнит (сеть магазинов)",
+            "contact:website": "http://magnit-info.ru"
+        },
+        "id": "3878467673",
+        "lat": 55.0291123,
+        "lon": 73.2596224,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "3878467690",
+        "lat": 55.0290877,
+        "lon": 73.2568293,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "3878467691",
+        "lat": 55.0298614,
+        "lon": 73.2715969,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "09:00-20:30"
+        },
+        "id": "3878467698",
+        "lat": 55.0287433,
+        "lon": 73.2684935,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3878467699",
+        "lat": 55.0295418,
+        "lon": 73.2707869,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ООО Гранат",
+            "opening_hours": "09:00-21:00; PH вых."
+        },
+        "id": "3878467709",
+        "lat": 55.0287227,
+        "lon": 73.2670243,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Бристоль",
+            "was:shop": "alcohol"
+        },
+        "id": "3886581683",
+        "lat": 54.9709443,
+        "lon": 73.3930116,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3886581706",
+        "lat": 54.9709207,
+        "lon": 73.3863264,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3886581707",
+        "lat": 54.9716485,
+        "lon": 73.3964803,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3886581710",
+        "lat": 54.9707135,
+        "lon": 73.3912509,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Домино",
+            "was:shop": "leather"
+        },
+        "id": "3887865467",
+        "lat": 54.9714023,
+        "lon": 73.3823063,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Reportage",
+            "was:shop": "clothes"
+        },
+        "id": "3892069979",
+        "lat": 54.9765872,
+        "lon": 73.3810228,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Градус %",
+            "was:shop": "alcohol"
+        },
+        "id": "3892069983",
+        "lat": 54.9754667,
+        "lon": 73.381366,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Мелодия здоровья",
+            "amenity": "pharmacy"
+        },
+        "id": "3892069986",
+        "lat": 54.974615,
+        "lon": 73.381026,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "3892069991",
+        "lat": 54.9707007,
+        "lon": 73.3839436,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "level": "-1",
+            "amenity": "pharmacy"
+        },
+        "id": "3892069992",
+        "lat": 54.9740058,
+        "lon": 73.3817195,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3892069996",
+        "lat": 54.9735941,
+        "lon": 73.3818162,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "09:00-21:00"
+        },
+        "id": "3894063400",
+        "lat": 55.0080469,
+        "lon": 73.3445079,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3894063408",
+        "lat": 55.0114468,
+        "lon": 73.3351165,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "3894063414",
+        "lat": 54.9715033,
+        "lon": 73.394118,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Анекс Тур",
+            "was:shop": "travel_agency"
+        },
+        "id": "3895443882",
+        "lat": 54.971069,
+        "lon": 73.3889609,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "3895443884",
+        "lat": 54.9993242,
+        "lon": 73.3734326,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Максавит",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-21:00; Sa, Su 08:00-20:00"
+        },
+        "id": "3895443892",
+        "lat": 54.9751937,
+        "lon": 73.3820583,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Омские продукты",
+            "was:shop": "convenience"
+        },
+        "id": "3895443898",
+        "lat": 54.9853619,
+        "lon": 73.3788606,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3895443903",
+        "lat": 54.9993965,
+        "lon": 73.3734417,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "S.Jayne",
+            "was:shop": "clothes"
+        },
+        "id": "3898668250",
+        "lat": 54.9814337,
+        "lon": 73.3826547,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "3898668698",
+        "lat": 55.0090278,
+        "lon": 73.3411721,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Мелодия здоровья",
+            "amenity": "pharmacy"
+        },
+        "id": "3899605847",
+        "lat": 55.0431465,
+        "lon": 73.2952583,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "3899605849",
+        "lat": 55.0425585,
+        "lon": 73.2906358,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка 24",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "3899605853",
+        "lat": 55.0413284,
+        "lon": 73.2935221,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3899605854",
+        "lat": 55.0424146,
+        "lon": 73.2893213,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3899605855",
+        "lat": 55.0455703,
+        "lon": 73.2944591,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фитос",
+            "amenity": "pharmacy"
+        },
+        "id": "3899605856",
+        "lat": 55.0454719,
+        "lon": 73.2961737,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "3905293743",
+        "lat": 54.9862176,
+        "lon": 73.4249542,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Зелёнка",
+            "amenity": "pharmacy"
+        },
+        "id": "3905293756",
+        "lat": 55.0366676,
+        "lon": 73.2910769,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ИП Кузнецова О.В.",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "3905300666",
+        "lat": 55.0253703,
+        "lon": 73.2961656,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "3905300677",
+        "lat": 54.9862898,
+        "lon": 73.4261604,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "DNS",
+            "was:shop": "electronics"
+        },
+        "id": "3920325463",
+        "lat": 54.9858274,
+        "lon": 73.3768969,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Пеплос",
+            "clothes": "suits",
+            "was:shop": "clothes"
+        },
+        "id": "3920325473",
+        "lat": 54.9858363,
+        "lon": 73.377112,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Связной",
+            "was:shop": "mobile_phone"
+        },
+        "id": "3920325475",
+        "lat": 54.9858854,
+        "lon": 73.3770777,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Читай-Город",
+            "was:shop": "books"
+        },
+        "id": "3920325478",
+        "lat": 54.9860042,
+        "lon": 73.3767703,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Бульвар",
+            "was:shop": "shoes",
+            "opening_hours": "10:00-19:00"
+        },
+        "id": "3923476560",
+        "lat": 55.0288273,
+        "lon": 73.2737162,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ягуар",
+            "was:shop": "clothes"
+        },
+        "id": "3923476602",
+        "lat": 55.028842,
+        "lon": 73.2743901,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Белорусский трикотаж",
+            "was:shop": "clothes"
+        },
+        "id": "3931749416",
+        "lat": 55.0288461,
+        "lon": 73.2747106,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Marafett",
+            "level": "-1",
+            "was:shop": "chemist"
+        },
+        "id": "3931749431",
+        "lat": 55.0324755,
+        "lon": 73.2696175,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Алина-Маркет",
+            "was:shop": "cosmetics"
+        },
+        "id": "3934035731",
+        "lat": 55.0294097,
+        "lon": 73.2808924,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека №174",
+            "amenity": "pharmacy",
+            "operator": "Омское лекарство"
+        },
+        "id": "4019343858",
+        "lat": 55.031896,
+        "lon": 73.2498969,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "level": "-1",
+            "amenity": "pharmacy"
+        },
+        "id": "4019343870",
+        "lat": 55.0296278,
+        "lon": 73.2492268,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4019343871",
+        "lat": 55.0321887,
+        "lon": 73.2498861,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "03",
+            "amenity": "pharmacy"
+        },
+        "id": "4019344517",
+        "lat": 55.0317116,
+        "lon": 73.248876,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4019440166",
+        "lat": 54.9953878,
+        "lon": 73.3784698,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4019440172",
+        "lat": 54.9996582,
+        "lon": 73.3794811,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Desigual",
+            "clothes": "fashion",
+            "was:shop": "clothes",
+            "opening_hours": "Mo-Su 10:00-20:00"
+        },
+        "id": "4020087649",
+        "lat": 54.9844108,
+        "lon": 73.3750589,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4020087658",
+        "lat": 54.9930625,
+        "lon": 73.3718601,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Мистер Фогг",
+            "level": "-1",
+            "was:shop": "travel_agency"
+        },
+        "id": "4020087668",
+        "lat": 54.9837718,
+        "lon": 73.3740323,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "level": "-1",
+            "amenity": "pharmacy"
+        },
+        "id": "4021142789",
+        "lat": 55.0302225,
+        "lon": 73.2851804,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Буфет",
+            "was:shop": "beverages",
+            "opening_hours": "24/7"
+        },
+        "id": "4047550783",
+        "lat": 55.0324132,
+        "lon": 73.2706234,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "dispensing": "yes"
+        },
+        "id": "4068421960",
+        "lat": 54.993474,
+        "lon": 73.368859,
+        "version": 1
+    },
+    {
+        "tags": {
+            "level": "-1",
+            "was:shop": "pet"
+        },
+        "id": "4079812909",
+        "lat": 55.0242253,
+        "lon": 73.2995509,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ваш фармацевт",
+            "amenity": "pharmacy"
+        },
+        "id": "4079833848",
+        "lat": 55.0362072,
+        "lon": 73.2642535,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Рыба-Fish",
+            "was:shop": "seafood"
+        },
+        "id": "4080905669",
+        "lat": 55.0341614,
+        "lon": 73.2670832,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "4080905671",
+        "lat": 55.0341609,
+        "lon": 73.2666869,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4080905676",
+        "lat": 55.0331025,
+        "lon": 73.2721408,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4080905677",
+        "lat": 55.0332081,
+        "lon": 73.2678334,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Твоя экономия",
+            "amenity": "pharmacy"
+        },
+        "id": "4080921190",
+        "lat": 55.0331238,
+        "lon": 73.2739874,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ave mama",
+            "clothes": "maternity",
+            "was:shop": "clothes"
+        },
+        "id": "4080975360",
+        "lat": 55.0335571,
+        "lon": 73.2802318,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Bishkekchanka",
+            "clothes": "women",
+            "was:shop": "clothes"
+        },
+        "id": "4080975361",
+        "lat": 55.0334022,
+        "lon": 73.2741678,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4080975366",
+        "lat": 55.0335172,
+        "lon": 73.2802337,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4081211226",
+        "lat": 55.0238677,
+        "lon": 73.2679916,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "A20",
+            "level": "-1",
+            "was:shop": "copyshop"
+        },
+        "id": "4092306650",
+        "lat": 55.0272992,
+        "lon": 73.2911109,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Сеть аптек низких цен",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-23:00"
+        },
+        "id": "4104236578",
+        "lat": 54.9205924,
+        "lon": 73.4515184,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4157679451",
+        "lat": 54.9389881,
+        "lon": 73.3822942,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4159655004",
+        "lat": 54.946878,
+        "lon": 73.3867987,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4159655046",
+        "lat": 54.9431427,
+        "lon": 73.3836804,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "S7",
+            "was:shop": "ticket"
+        },
+        "id": "4160633631",
+        "lat": 54.9495647,
+        "lon": 73.3880129,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Александрийские двери",
+            "was:shop": "doors"
+        },
+        "id": "4160633633",
+        "lat": 54.9508774,
+        "lon": 73.3882122,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4161293287",
+        "lat": 54.9618296,
+        "lon": 73.3857366,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ИП Рузанкина Е.С."
+        },
+        "id": "4161293891",
+        "lat": 54.9527199,
+        "lon": 73.3882531,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "BeerDinOff",
+            "was:shop": "beverages"
+        },
+        "id": "4161293912",
+        "lat": 54.9514173,
+        "lon": 73.3886418,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "4161293925",
+        "lat": 54.9533085,
+        "lon": 73.3881745,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "4161293926",
+        "lat": 54.9620012,
+        "lon": 73.3857024,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4161293933",
+        "lat": 54.9536283,
+        "lon": 73.3874672,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Доктор Кит",
+            "amenity": "pharmacy"
+        },
+        "id": "4161293980",
+        "lat": 54.9595793,
+        "lon": 73.3862602,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Для Вас",
+            "amenity": "pharmacy"
+        },
+        "id": "4162501120",
+        "lat": 54.9862861,
+        "lon": 73.3781891,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4163700658",
+        "lat": 55.0410938,
+        "lon": 73.2949111,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека №203",
+            "amenity": "pharmacy"
+        },
+        "id": "4163700664",
+        "lat": 55.0361002,
+        "lon": 73.2941826,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "4163700685",
+        "lat": 55.0397373,
+        "lon": 73.2992433,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "4163700686",
+        "lat": 55.04223,
+        "lon": 73.2791119,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4163700790",
+        "lat": 55.0416502,
+        "lon": 73.2922178,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Дружба",
+            "was:shop": "convenience"
+        },
+        "id": "4172962831",
+        "lat": 55.0337518,
+        "lon": 73.2443848,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4173346520",
+        "lat": 55.037876,
+        "lon": 73.2628196,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4173346527",
+        "lat": 55.0385231,
+        "lon": 73.2655409,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Свадебный салон",
+            "clothes": "wedding",
+            "was:shop": "clothes"
+        },
+        "id": "4181498949",
+        "lat": 54.9860555,
+        "lon": 73.3769305,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ООО Терра"
+        },
+        "id": "4185332723",
+        "lat": 55.0411477,
+        "lon": 73.2947222,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Стоп.ка",
+            "was:shop": "alcohol"
+        },
+        "id": "4200170775",
+        "lat": 54.9724868,
+        "lon": 73.4104554,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4200170777",
+        "lat": 54.9724414,
+        "lon": 73.4107886,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "convenience",
+            "opening_hours": "24/7"
+        },
+        "id": "4200171103",
+        "lat": 54.9725501,
+        "lon": 73.4106922,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "pawnbroker",
+            "opening_hours": "10:00-20:00"
+        },
+        "id": "4200369484",
+        "lat": 54.972084,
+        "lon": 73.4108419,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Serebro",
+            "was:shop": "beauty"
+        },
+        "id": "4202575225",
+        "lat": 54.9758384,
+        "lon": 73.3812107,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Дыхание Сиама",
+            "massage": "sexual",
+            "was:shop": "massage"
+        },
+        "id": "4202575230",
+        "lat": 54.9876445,
+        "lon": 73.3750767,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Летур",
+            "was:shop": "travel_agency"
+        },
+        "id": "4202575232",
+        "lat": 54.9862153,
+        "lon": 73.3763289,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Beerлога",
+            "was:shop": "beverages"
+        },
+        "id": "4208923499",
+        "lat": 54.972475,
+        "lon": 73.4107057,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Биомедсервис",
+            "amenity": "pharmacy"
+        },
+        "id": "4212029845",
+        "lat": 54.9830219,
+        "lon": 73.3968036,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "beverages",
+            "description": "Grand Beer"
+        },
+        "id": "4212127551",
+        "lat": 54.9727654,
+        "lon": 73.387693,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Миледи",
+            "clothes": "wedding",
+            "was:shop": "clothes"
+        },
+        "id": "4212127560",
+        "lat": 54.9727004,
+        "lon": 73.3850958,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Decoro",
+            "was:shop": "interior_decoration"
+        },
+        "id": "4212686680",
+        "lat": 54.9760031,
+        "lon": 73.3784746,
+        "version": 1
+    },
+    {
+        "tags": {
+            "level": "-1",
+            "amenity": "pharmacy",
+            "operator": "ИП Попов"
+        },
+        "id": "4219992637",
+        "lat": 54.9754829,
+        "lon": 73.3879699,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Кармель",
+            "amenity": "pharmacy"
+        },
+        "id": "4219992647",
+        "lat": 54.9730971,
+        "lon": 73.3942022,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Разливнофф",
+            "was:shop": "beverages"
+        },
+        "id": "4225534716",
+        "lat": 55.0404697,
+        "lon": 73.3136264,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "optician"
+        },
+        "id": "4237238030",
+        "lat": 55.0292696,
+        "lon": 73.2695784,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Дельта",
+            "amenity": "pharmacy"
+        },
+        "id": "4239998109",
+        "lat": 54.9713076,
+        "lon": 73.3795499,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Здрава",
+            "amenity": "pharmacy"
+        },
+        "id": "4239998111",
+        "lat": 54.974247,
+        "lon": 73.3784005,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "4290419087",
+        "lat": 54.9224374,
+        "lon": 73.4510133,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека №222",
+            "amenity": "pharmacy",
+            "operator": "Омское лекарство"
+        },
+        "id": "4293130363",
+        "lat": 54.9749216,
+        "lon": 73.3866857,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4350098308",
+        "lat": 54.9666458,
+        "lon": 73.380026,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "4354425272",
+        "lat": 54.9766562,
+        "lon": 73.3882273,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Цветущий сад",
+            "was:shop": "garden_centre",
+            "opening_hours": "Mo-Fr 10:00-19:00; Sa,Su 10:00-15:00"
+        },
+        "id": "4354425273",
+        "lat": 54.9777305,
+        "lon": 73.3879841,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека для Вас",
+            "amenity": "pharmacy"
+        },
+        "id": "4360087997",
+        "lat": 55.0016069,
+        "lon": 73.3056253,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада-Омск5",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "4406894126",
+        "lat": 54.9325003,
+        "lon": 73.3280901,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4418584234",
+        "lat": 54.9585602,
+        "lon": 73.472413,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека „Дельта“",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:30-21:00, Sa,Su 09:00-20:00"
+        },
+        "id": "4448741094",
+        "lat": 54.9968091,
+        "lon": 73.3552285,
+        "version": 1
+    },
+    {
+        "tags": {
+            "phone": "+7 381 2369104",
+            "was:shop": "electronics",
+            "description": "Сибтекс",
+            "opening_hours": "Mo-Fr 10:00-14:00,15:00-19:00; Sa 10:00-14:00,15:00-18:00"
+        },
+        "id": "4453230569",
+        "lat": 54.9925622,
+        "lon": 73.4306475,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "ТК Лента",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "4464338078",
+        "lat": 55.0361871,
+        "lon": 73.4159794,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Dell' Arte",
+            "was:shop": "hairdresser"
+        },
+        "id": "4467260796",
+        "lat": 54.9838832,
+        "lon": 73.38403,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "07:00-24:00"
+        },
+        "id": "4485806177",
+        "lat": 55.0287817,
+        "lon": 73.2868108,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4485829098",
+        "lat": 55.0000916,
+        "lon": 73.2960369,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4485829099",
+        "lat": 54.9997377,
+        "lon": 73.2954951,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармокопейка",
+            "amenity": "pharmacy",
+            "name:ru": "Фармокопейка"
+        },
+        "id": "4560947191",
+        "lat": 55.0259996,
+        "lon": 73.3655831,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Госаптека",
+            "amenity": "pharmacy",
+            "addr:city": "Омск",
+            "addr:street": "24-я Северная улица",
+            "drive_through": "no",
+            "addr:housenumber": "208"
+        },
+        "id": "4589575046",
+        "lat": 55.0230738,
+        "lon": 73.3982174,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4603532394",
+        "lat": 55.0230698,
+        "lon": 73.4007604,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4603532396",
+        "lat": 55.0230294,
+        "lon": 73.4007041,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Амиго",
+            "was:shop": "variety_store"
+        },
+        "id": "4616273580",
+        "lat": 54.9630981,
+        "lon": 73.3861175,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Confekcioner",
+            "was:shop": "clothes"
+        },
+        "id": "4616273588",
+        "lat": 54.9803218,
+        "lon": 73.3772405,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4618305539",
+        "lat": 55.0089526,
+        "lon": 73.3487029,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4727170338",
+        "lat": 54.9426774,
+        "lon": 73.4403645,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Бристоль",
+            "was:shop": "kiosk"
+        },
+        "id": "4730210838",
+        "lat": 55.012136,
+        "lon": 73.3345646,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "4739733111",
+        "lat": 54.979234,
+        "lon": 73.3122548,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Ваш фармацевт",
+            "amenity": "pharmacy"
+        },
+        "id": "4741800524",
+        "lat": 54.9934065,
+        "lon": 73.2774926,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Кристина",
+            "level": "-1",
+            "clothes": "wedding",
+            "was:shop": "clothes"
+        },
+        "id": "4748505112",
+        "lat": 55.0243811,
+        "lon": 73.2990938,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Дельта",
+            "amenity": "pharmacy"
+        },
+        "id": "4751207571",
+        "lat": 54.9511315,
+        "lon": 73.3886303,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4758372949",
+        "lat": 54.972598,
+        "lon": 73.383572,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "09:00-22:00"
+        },
+        "id": "4763390507",
+        "lat": 54.9965753,
+        "lon": 73.272496,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ИП Агеев В.А."
+        },
+        "id": "4784526783",
+        "lat": 54.9483656,
+        "lon": 73.3866611,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Софита",
+            "amenity": "pharmacy"
+        },
+        "id": "4786727535",
+        "lat": 54.9553816,
+        "lon": 73.3880422,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Хочу это носить",
+            "was:shop": "clothes"
+        },
+        "id": "4786727551",
+        "lat": 54.953204,
+        "lon": 73.3881976,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "4811911808",
+        "lat": 54.9473385,
+        "lon": 73.3840859,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4811911809",
+        "lat": 54.9472387,
+        "lon": 73.3840749,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "4811911816",
+        "lat": 54.9427153,
+        "lon": 73.3847948,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ИП Недергаева Т.М.",
+            "opening_hours": "09:00-21:00"
+        },
+        "id": "4908640775",
+        "lat": 55.0282779,
+        "lon": 73.297748,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "name:ru": "Фармакопейка"
+        },
+        "id": "4914480722",
+        "lat": 55.0348236,
+        "lon": 73.4454964,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ВетМаркт",
+            "was:shop": "pet"
+        },
+        "id": "4920977240",
+        "lat": 55.0105922,
+        "lon": 73.3375259,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4920977256",
+        "lat": 55.0329803,
+        "lon": 73.2680171,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Для Вас",
+            "amenity": "pharmacy",
+            "opening_hours": "09:00-20:00"
+        },
+        "id": "4966415443",
+        "lat": 55.0320283,
+        "lon": 73.2947888,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "4970240181",
+        "lat": 54.920961,
+        "lon": 73.3179715,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4972644659",
+        "lat": 54.9986803,
+        "lon": 73.3533803,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "4973404099",
+        "lat": 54.9982984,
+        "lon": 73.350567,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "4987573831",
+        "lat": 55.0471926,
+        "lon": 73.3140862,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "4987573836",
+        "lat": 55.0471713,
+        "lon": 73.3071658,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "opening_hours": "09:00-20:00"
+        },
+        "id": "4999064493",
+        "lat": 55.032573,
+        "lon": 73.2220921,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "5036895836",
+        "lat": 54.9883773,
+        "lon": 73.3071955,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "5036895837",
+        "lat": 54.9885621,
+        "lon": 73.3068194,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "5138912774",
+        "lat": 54.9919165,
+        "lon": 73.2969479,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "5138912775",
+        "lat": 54.9909981,
+        "lon": 73.3015336,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ТК Триумф",
+            "highway": "bus_stop"
+        },
+        "id": "5158634268",
+        "lat": 54.9886577,
+        "lon": 73.3839742,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ТК Триумф",
+            "highway": "bus_stop"
+        },
+        "id": "5158634269",
+        "lat": 54.9888504,
+        "lon": 73.3837709,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "convenience",
+            "description": "Пятёрочка"
+        },
+        "id": "5206538783",
+        "lat": 54.9865584,
+        "lon": 73.2788885,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "5206538786",
+        "lat": 54.987786,
+        "lon": 73.2795347,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "5206538788",
+        "lat": 54.9899856,
+        "lon": 73.2723101,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "5214647575",
+        "lat": 54.9967638,
+        "lon": 73.2862562,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ГосАптека",
+            "amenity": "pharmacy",
+            "healthcare": "pharmacy"
+        },
+        "id": "5232253601",
+        "lat": 54.9352519,
+        "lon": 73.3325357,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy",
+            "healthcare": "pharmacy"
+        },
+        "id": "5232253602",
+        "lat": 54.9332609,
+        "lon": 73.3291366,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 09:00-21:00"
+        },
+        "id": "5277617622",
+        "lat": 54.9243686,
+        "lon": 73.4713816,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "5337366451",
+        "lat": 54.9857784,
+        "lon": 73.3128559,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Биомедсервис",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-21:00, Sa 10:00-20:00, Su 10:00-19:00"
+        },
+        "id": "5339551483",
+        "lat": 54.9844562,
+        "lon": 73.3160569,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "5339551484",
+        "lat": 54.9855265,
+        "lon": 73.313375,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Древо жизни",
+            "amenity": "pharmacy",
+            "opening_hours": "24/7"
+        },
+        "id": "5344463022",
+        "lat": 54.9758465,
+        "lon": 73.3005546,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "5350854858",
+        "lat": 54.9460583,
+        "lon": 73.3807528,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "5368341454",
+        "lat": 54.9928027,
+        "lon": 73.2849616,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Максавит",
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Fr 08:00-21:00, Sa,Su 08:00-20:00"
+        },
+        "id": "5387191957",
+        "lat": 54.986216,
+        "lon": 73.3118073,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "ГОСАПТЕКА",
+            "amenity": "pharmacy",
+            "healthcare": "pharmacy",
+            "addr:street": "улица 12 Декабря",
+            "addr:housenumber": "102"
+        },
+        "id": "5400978128",
+        "lat": 54.9490199,
+        "lon": 73.3330561,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Аптека от склада",
+            "amenity": "pharmacy"
+        },
+        "id": "5405621067",
+        "lat": 54.9862769,
+        "lon": 73.3116819,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "opening_hours": "Mo-Su 08:00-22:00"
+        },
+        "id": "5405621068",
+        "lat": 54.9861749,
+        "lon": 73.3118921,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Центр-книга",
+            "level": "-1",
+            "was:shop": "books"
+        },
+        "id": "5487084734",
+        "lat": 55.0238029,
+        "lon": 73.3005514,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Дисконт аптека",
+            "amenity": "pharmacy"
+        },
+        "id": "5551748221",
+        "lat": 54.9388808,
+        "lon": 73.382247,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "5565545945",
+        "lat": 54.9715318,
+        "lon": 73.3945899,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "На Лермонтова",
+            "amenity": "pharmacy"
+        },
+        "id": "5568417580",
+        "lat": 54.9818989,
+        "lon": 73.3819768,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "5741245302",
+        "lat": 55.0406839,
+        "lon": 73.444439,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "5778745058",
+        "lat": 54.9699703,
+        "lon": 73.4476295,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Lamoda",
+            "was:shop": "clothes"
+        },
+        "id": "5808862967",
+        "lat": 55.0299049,
+        "lon": 73.2768657,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "5808912394",
+        "lat": 55.0289534,
+        "lon": 73.2826871,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "New Tobacco",
+            "was:shop": "tobacco"
+        },
+        "id": "5808912444",
+        "lat": 55.0289937,
+        "lon": 73.2493238,
+        "version": 1
+    },
+    {
+        "tags": {
+            "was:shop": "clothes",
+            "description": "Май-ё",
+            "opening_hours": "Mo-Su 10:00-20:00"
+        },
+        "id": "5891516690",
+        "lat": 54.9217383,
+        "lon": 73.4051516,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "СТЦ Мега",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "5951973681",
+        "lat": 54.9709064,
+        "lon": 73.2871281,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "ТК Лента",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "5967293764",
+        "lat": 55.0485485,
+        "lon": 73.3301514,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "ОБИ",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "5995732392",
+        "lat": 55.0067822,
+        "lon": 73.3007437,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "6155766119",
+        "lat": 55.0423833,
+        "lon": 73.2837009,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "6155766120",
+        "lat": 55.0423864,
+        "lon": 73.2830571,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "6386188620",
+        "lat": 54.9998011,
+        "lon": 73.372916,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "55 Плюс",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-22:00"
+        },
+        "id": "6428819622",
+        "lat": 54.9941356,
+        "lon": 73.3720435,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "amenity": "pharmacy"
+        },
+        "id": "6431342536",
+        "lat": 54.9953995,
+        "lon": 73.3579713,
+        "version": 1
+    },
+    {
+        "tags": {
+            "bus": "yes",
+            "name": "Мега",
+            "highway": "bus_stop",
+            "public_transport": "platform"
+        },
+        "id": "6451203024",
+        "lat": 54.9716147,
+        "lon": 73.2822241,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Семейная",
+            "level": "-1",
+            "amenity": "pharmacy"
+        },
+        "id": "6478716779",
+        "lat": 55.0012128,
+        "lon": 73.3525625,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "6541555541",
+        "lat": 54.9668048,
+        "lon": 73.3955936,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "6547534588",
+        "lat": 55.0022751,
+        "lon": 73.3482027,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "6579593997",
+        "lat": 55.048421,
+        "lon": 73.3146429,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Биомедсервис",
+            "amenity": "pharmacy"
+        },
+        "id": "6735590272",
+        "lat": 54.9809988,
+        "lon": 73.3930753,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy"
+        },
+        "id": "6794227995",
+        "lat": 54.9105878,
+        "lon": 73.459346,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Тортини",
+            "was:shop": "confectionery"
+        },
+        "id": "7101985882",
+        "lat": 55.02892,
+        "lon": 73.2832673,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy"
+        },
+        "id": "7112353123",
+        "lat": 54.9972828,
+        "lon": 73.274729,
+        "version": 1
+    },
+    {
+        "tags": {
+            "name": "Фармакопейка",
+            "amenity": "pharmacy",
+            "opening_hours": "08:00-21:00"
+        },
+        "id": "7213282642",
+        "lat": 55.0082444,
+        "lon": 73.3452961,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ИП Сачкова",
+            "opening_hours": "08:00-21:00"
+        },
+        "id": "7213282648",
+        "lat": 55.0080714,
+        "lon": 73.3449298,
+        "version": 1
+    },
+    {
+        "tags": {
+            "amenity": "pharmacy",
+            "operator": "ООО Райт",
+            "opening_hours": "24/7"
+        },
+        "id": "7213282649",
+        "lat": 55.0080228,
+        "lon": 73.3448268,
+        "version": 1
+    }
+]

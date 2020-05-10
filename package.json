@@ -1,0 +1,23 @@
+{
+  "name": "omsk-graph",
+  "version": "1.0.0",
+  "description": "",
+  "main": "filter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VsevolodTrofimov/omsk-graph.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VsevolodTrofimov/omsk-graph/issues"
+  },
+  "homepage": "https://github.com/VsevolodTrofimov/omsk-graph#readme",
+  "dependencies": {
+    "fs-extra": "^9.0.0",
+    "osm-read": "^0.7.0"
+  }
+}
