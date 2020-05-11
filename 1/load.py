@@ -1,5 +1,4 @@
 import osmnx as ox
-import connectPOI
 
 omsk = {'city': 'Omsk', 'country': 'Russia'}
 
