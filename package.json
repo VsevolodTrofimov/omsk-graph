@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/VsevolodTrofimov/omsk-graph#readme",
   "dependencies": {
+    "csvtojson": "^2.0.10",
     "fs-extra": "^9.0.0",
     "osm-read": "^0.7.0"
   }
