@@ -18,8 +18,6 @@ const mapObject = (obj, mapper) => {
   return mapped;
 };
 
-const worthy = [];
-
 csv()
   .fromStream(readStream)
   .subscribe(
@@ -28,6 +26,7 @@ csv()
         ...mapObject(json, (val) => val || undefined),
         id: json.field1,
         field1: undefined,
+        nodes: json.nodes ? JSON.parse(json.nodes) : [],
       };
 
       if (house.building === "apartments") {
