@@ -64,11 +64,11 @@ csv()
           }
 
           return {
-            osmid: house.id,
+            osmid: parseInt(house.id),
             geometry: house.geometry,
             tag,
             toGeometry: closest.geometry,
-            closest: closest.osmid,
+            closest: parseInt(closest.osmid),
           };
         });
 
