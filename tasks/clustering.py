@@ -12,13 +12,12 @@ def get_clusters(dist_matrix, k: int):
 
 
 def get_distance(lat1: float, long1: float, lat2: float, long2: float):
-    try:
-        res = math.acos(math.sin(lat1) * math.sin(lat2)
-                        + math.cos(lat1) * math.cos(lat2) * math.cos(long1 - long2)
-                        ) * 6371
-    except:
-        res = 1e20
-    return res
+    if abs(lat1 - lat2) + abs(long1 - long2) < 1e-6:
+        return 0
+    else:
+        return math.acos(math.sin(lat1) * math.sin(lat2)
+                         + math.cos(lat1) * math.cos(lat2) * math.cos(long1 - long2)
+                         ) * 6371
 
 
 def get_centroid(cluster):
