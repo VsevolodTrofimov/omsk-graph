@@ -65,7 +65,7 @@ def skip():
     pass
 
 
-def getManyToManyPaths(G, starts, ends, speed, cb=skip):
+def getManyToManyPaths(G, starts, ends, speed, cb=skip): 
     result = {}
 
     for start in starts:
@@ -75,9 +75,21 @@ def getManyToManyPaths(G, starts, ends, speed, cb=skip):
     return result
 
 
-def joinPaths(a, b):
+def joinPaths(a, b): 
     return {
         "route": a['route'] + b['route'],
         "length": a['length'] + b['length'],
         "time": a['time'] + b['time']
     }
+
+
+def routes_to_tree(graph, routes):
+    edges = set()
+    tree_weight = 0
+    for route in routes:
+        for i in range(1, len(route)):
+            edge = (route[i - 1], route[i])
+            if edge not in edges:
+                tree_weight += graph[edge[0]][edge[1]][0]['length']
+                edges.add(edge)
+    return {'edges': edges, 'weight': tree_weight}
