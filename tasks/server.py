@@ -1,10 +1,12 @@
 from flask import Flask, request
+from flask_cors import CORS
 from solve_11 import solve_11
 from solve_12 import solve_12
 from solve_13_24 import solve_13_14, solve_21, solve_22_24
 import lib
 
 app = Flask(__name__)
+CORS(app)
 
 G = lib.load()
 
@@ -12,6 +14,7 @@ G = lib.load()
 @app.route('/1.1', methods=['POST'])
 def task_11():
     params = request.json
+    print(request.json)
 
     return solve_11(
         G, 

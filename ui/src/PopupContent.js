@@ -10,7 +10,7 @@ export default function PopupContent() {
   const setStartHouse = useSetRecoilState(startHouseState);
 
   return (
-    <div style={{ width: 300 }}>
+    <div>
       <Radio.Group
         onChange={(e) => {
           setPathType(e.target.value);
