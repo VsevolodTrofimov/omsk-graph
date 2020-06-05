@@ -1,8 +1,9 @@
 import React from "react";
-
+import graph from "./graph.json";
 import { Radio } from "antd";
+
 import { pathTypeState, popupHouseState, startHouseState } from "./store";
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState, useRecoilValue } from "recoil";
 
 export default function PopupContent() {
   const [pathType, setPathType] = useRecoilState(pathTypeState);
@@ -19,11 +20,24 @@ export default function PopupContent() {
         }}
         value={pathType}
       >
-        <Radio.Button value="to" on>
-          Туда
-        </Radio.Button>
-        <Radio.Button value="round">Туда-обратно</Radio.Button>
+        <RadioButtons nodeTag={graph[[popupHouseId]].tag} />
       </Radio.Group>
     </div>
   );
 }
+
+const RadioButtons = (props) => {
+  return (
+    props.nodeTag === "apartments" ?
+      <div>
+        <Radio.Button value="to" on > Туда </Radio.Button>
+        <Radio.Button value="round">Туда-обратно</Radio.Button>
+      </div> :
+      <div>
+        <Radio.Button value="from" on> Обратно </Radio.Button>
+      </div>
+
+  )
+}
+
+
