@@ -15,6 +15,8 @@ import {
 import { task11PathToClosestObject } from "../../store/task11";
 import { splitNodes } from "../../store/selection";
 
+import "./CityMap.css";
+
 export default function MapContainer() {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
   const setStartHouse = useSetRecoilState(startHouseState);

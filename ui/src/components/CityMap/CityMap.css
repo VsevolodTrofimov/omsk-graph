@@ -1,0 +1,28 @@
+.marker-cluster-large {
+  background-color: blue;
+  opacity: 0.8 !important;
+}
+
+.marker-cluster {
+  border-radius: 4px;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.marker-cluster div {
+  display: none;
+}
+
+.marker-cluster span {
+  display: none;
+}
+
+.marker-cluster-medium {
+  background-color: blue;
+  opacity: 0.5 !important;
+}
+
+.marker-cluster-small {
+  background-color: blue;
+  opacity: 0.3 !important;
+}
