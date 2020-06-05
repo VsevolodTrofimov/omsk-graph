@@ -133,8 +133,11 @@ def solve_11(G, houses, infra, maxTime=0, maxDistance=0, speed=40):
             'to': houseClosestObj,
             'from': objClosestHouse,
             'round': shortestHouseObjRounds
-        },
-        'inRange': {
+        }
+    }
+
+    if maxDistance != 0 or maxTime != 0:
+        output['inRange'] = {
             'to': {
                 'byTime': houseObjByTime,
                 'byDist': houseObjByDist
@@ -148,6 +151,5 @@ def solve_11(G, houses, infra, maxTime=0, maxDistance=0, speed=40):
                 'byDist': houseObjRoundByDist
             }
         }
-    }
 
     return output

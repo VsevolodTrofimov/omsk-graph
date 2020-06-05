@@ -64,5 +64,6 @@ def task_22_24():
     return solve_22_24(
         G, 
         params['houses'], 
-        params['infra'][0]
+        params['infra'][0],
+        params['clusterCount']
     )

@@ -5,20 +5,18 @@ import {
   Button,
   Typography,
   InputNumber,
-  Divider,
   notification,
 } from "antd";
-import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
+import { useRecoilValue, useRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
-import { pathsAtom } from "../../store/paths";
-import { task11Atom } from "../../store/task11";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
 
 export const SectionTwo = React.memo(() => {
+  const [clusterCount, setClusterCount] = useState(2);
   const [isLoading, setIsLoading] = useState(false);
 
   const selectedHouses = useRecoilValue(selectedHousesState);
@@ -27,6 +25,7 @@ export const SectionTwo = React.memo(() => {
   const callForClusters = async (infra = selectedInfra) => {
     if (infra.length > 1) {
       notification.info({
+        key: "2.2 warn",
         message: "Для 2.2 должен быть выбран 1 объект инфраструктуры",
         description: (
           <div>
@@ -35,6 +34,7 @@ export const SectionTwo = React.memo(() => {
               onClick={() => {
                 setSelectedInfra([infra[0]]);
                 callForClusters([infra[0]]);
+                notification.close("2.2 warn");
               }}
             >
               Оставить только первый
@@ -47,6 +47,7 @@ export const SectionTwo = React.memo(() => {
       const result = await api("2.2-2.4", {
         houses: selectedHouses,
         infra: infra,
+        clusterCount: clusterCount,
       });
       setIsLoading(false);
       console.log(result);
@@ -59,13 +60,22 @@ export const SectionTwo = React.memo(() => {
       <Collapse accordion>
         <Panel header="2.1 Построить дерево кратчайших путей" key="1"></Panel>
         <Panel header="2.2-2.4 Разбиение на кластеры" key="2">
-          <Button
-            loading={isLoading}
-            type="primary"
-            onClick={() => callForClusters()}
-          >
-            Вычислить кластеры
-          </Button>
+          <Space>
+            Кластеры:
+            <InputNumber
+              min={1}
+              max={Math.max(selectedHouses.length, 1)}
+              value={clusterCount}
+              onChange={setClusterCount}
+            />
+            <Button
+              loading={isLoading}
+              type="primary"
+              onClick={() => callForClusters()}
+            >
+              Вычислить кластеры
+            </Button>
+          </Space>
         </Panel>
       </Collapse>
     </Space>
