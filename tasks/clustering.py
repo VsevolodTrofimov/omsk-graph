@@ -45,4 +45,5 @@ def plot_dendrogram(dist_matrix, **kwargs):
     dendrogram(linkage_matrix, **kwargs)
     plt.xlabel("Index of point")
     plt.ylabel("Distance")
-    plt.show()
+    #plt.show()
+    plt.savefig('dendrogram')
