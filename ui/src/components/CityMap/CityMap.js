@@ -1,17 +1,19 @@
 import React from "react";
 import { Map, TileLayer, Popup, Polyline } from "react-leaflet";
-import PopupContent from "./PopupContent";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+
+import { Nodes } from "../Nodes/Nodes";
+import PopupContent from "../PopupContent/PopupContent";
+
 import {
-  task11PathToClosestObject,
-  splitNodes,
-  popupHouseState,
   startHouseState,
   pathTypeState,
-} from "./store";
-import { Nodes } from "./Nodes";
+  popupHouseState,
+} from "../../store/paths";
+import { task11PathToClosestObject } from "../../store/task11";
+import { splitNodes } from "../../store/selection";
 
 export default function MapContainer() {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);

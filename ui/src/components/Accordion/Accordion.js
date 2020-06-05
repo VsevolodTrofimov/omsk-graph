@@ -8,16 +8,18 @@ import {
   Tag,
   Divider,
 } from "antd";
-import "./Accordion.css";
 import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
+
+import { api } from "../../api";
 import {
-  selectedHousesState,
   selectedInfraState,
+  selectedHousesState,
   getRandom,
-  pathsAtom,
-  task11Atom,
-} from "./store";
-import { api } from "./api";
+} from "../../store/selection";
+import { pathsAtom } from "../../store/paths";
+import { task11Atom } from "../../store/task11";
+
+import "./Accordion.css";
 
 const { Panel } = Collapse;
 const { Text } = Typography;

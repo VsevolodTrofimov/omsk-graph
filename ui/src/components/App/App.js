@@ -1,8 +1,10 @@
 import React from "react";
-import "./App.css";
-import MapContainer from "./MapContainer";
-import Accordion from "./Accordion";
 import { RecoilRoot } from "recoil";
+
+import MapContainer from "../CityMap/CityMap";
+import Accordion from "../Accordion/Accordion";
+
+import "./App.css";
 
 export default function App() {
   return (

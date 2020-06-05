@@ -131,7 +131,7 @@ def solve_11(G, houses, infra, maxTime=0, maxDistance=0, speed=40):
         'paths': paths,
         'closest': {
             'to': houseClosestObj,
-            'form': objClosestHouse,
+            'from': objClosestHouse,
             'round': shortestHouseObjRounds
         },
         'inRange': {
