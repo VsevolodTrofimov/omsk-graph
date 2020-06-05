@@ -137,9 +137,9 @@
 //         }
 //     }
 // }
-let houses = {}
+let houses = {};
 for (let [key, value] of Object.entries(graph)) {
-    if (value.tag === 'apartments') {
-        houses[key] = value;
-    }
+  if (value.tag === "apartments") {
+    houses[key] = value;
+  }
 }
