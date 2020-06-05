@@ -3,7 +3,7 @@ import { Map, TileLayer, Popup, Polyline } from "react-leaflet";
 import PopupContent from "./PopupContent";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import "react-leaflet-markercluster/dist/styles.min.css";
-import { useRecoilState, useRecoilValue } from "recoil";
+import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import {
   pathClosestObject,
   splitNodes,
@@ -11,13 +11,12 @@ import {
   startHouseState,
   pathTypeState,
 } from "./store";
-import { Node } from "./Node";
 import { Nodes } from "./Nodes";
 
 export default function MapContainer() {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
-  const [startHouse, setStartHouse] = useRecoilState(startHouseState);
-  const [pathType, setPathType] = useRecoilState(pathTypeState);
+  const setStartHouse = useSetRecoilState(startHouseState);
+  const setPathType = useSetRecoilState(pathTypeState);
   const path = useRecoilValue(pathClosestObject);
   const { passiveNodes, selectedNodes } = useRecoilValue(splitNodes);
 

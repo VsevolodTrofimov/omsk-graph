@@ -2,12 +2,12 @@ import React from "react";
 
 import { Radio } from "antd";
 import { pathTypeState, popupHouseState, startHouseState } from "./store";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 
 export default function PopupContent() {
   const [pathType, setPathType] = useRecoilState(pathTypeState);
-  const [startHouse, setStartHouse] = useRecoilState(startHouseState);
   const [popupHouseId, setPopupHouseId] = useRecoilState(popupHouseState);
+  const setStartHouse = useSetRecoilState(startHouseState);
 
   return (
     <div style={{ width: 300 }}>
