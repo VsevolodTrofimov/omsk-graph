@@ -65,5 +65,5 @@ def task_22_24():
     return solve_22_24(
         G, 
         params['houses'], 
-        params['infra']
+        params['infra'][0]
     )

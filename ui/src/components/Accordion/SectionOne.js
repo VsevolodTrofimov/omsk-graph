@@ -67,8 +67,11 @@ export const SectionOne = () => {
                 infra: selectedInfra,
               });
               setIsLoading(false);
-              setPaths(result.paths);
-              set11(result);
+
+              if (result) {
+                setPaths(result.paths);
+                set11(result);
+              }
             }}
           >
             Найти независимо от расстояния

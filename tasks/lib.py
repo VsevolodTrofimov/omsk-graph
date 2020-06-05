@@ -46,7 +46,7 @@ def getFromToPath(G, start, end, speed):
     return route2Path(G, nx.dijkstra_path(G, start, end, "length"), speed)
 
 
-def getFormSingleToManyPaths(G, start, ends, speed):
+def getFromSingleToManyPaths(G, start, ends, speed):
     result = {}
 
     _, routes = nx.single_source_dijkstra(G, start, weight="length")
@@ -66,7 +66,7 @@ def getManyToManyPaths(G, starts, ends, speed, cb=skip):
     result = {}
 
     for start in starts:
-        result[start] = getFormSingleToManyPaths(G, start, ends, speed)
+        result[start] = getFromSingleToManyPaths(G, start, ends, speed)
         cb()
 
     return result

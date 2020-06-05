@@ -46,6 +46,10 @@ def solve_22_24(graph, houses, infra, speed=40):
     # 2.2)
     houses_coords = np.array([(graph.nodes[h]['y'], graph.nodes[h]['x']) for h in houses])
     dist_matrix = np.array([[get_distance(p[0], p[1], pp[0], pp[1]) for pp in houses_coords] for p in houses_coords])
+
+
+    print(houses_coords, dist_matrix)
+
     # plot_dendrogram(dist_matrix, truncate_mode='level')
     solution = defaultdict()
     for k in [2, 3, 5]:
@@ -72,10 +76,10 @@ def solve_22_24(graph, houses, infra, speed=40):
         routes = [route['route'] for route in routes.values()]
         tree = lib.routes_to_tree(graph, routes)
         solution[k] = {
-            # 'centroidTree': tree,            # 2.3b
-            # 'centroidLength': paths_length,  # 2.3b (suddenly need)
-            # 'clusterTrees': trees,           # 2.3cd
-            # 'clusterLengths': lengths,       # 2.3cd
-            # 'centroids': centroids    # 2.3a
+            'centroidTree': tree,            # 2.3b
+            'centroidLength': paths_length,  # 2.3b (suddenly need)
+            'clusterTrees': trees,           # 2.3cd
+            'clusterLengths': lengths,       # 2.3cd
+            'centroids': centroids    # 2.3a
         }
     return solution
