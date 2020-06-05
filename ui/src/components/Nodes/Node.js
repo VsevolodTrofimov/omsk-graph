@@ -3,38 +3,60 @@ import { Marker } from "react-leaflet";
 import { Icon } from "leaflet";
 
 const passiveHouse = new Icon({
-  iconUrl: "/passiveHouse.png",
-  iconSize: [25, 25],
-});
-
-const passiveInfra = new Icon({
-  iconUrl: "/passiveInfra.png",
+  iconUrl: "/house_passive.png",
   iconSize: [25, 25],
 });
 
 const house = new Icon({
-  iconUrl: "/activeHouse.png",
+  iconUrl: "/house.png",
   iconSize: [25, 25],
 });
 
-const infra = new Icon({
-  iconUrl: "/activeInfra.png",
-  iconSize: [25, 25],
-});
+const activeObjectIcons = {
+  hospital: new Icon(
+    {
+      iconUrl: "/hospital.png",
+      iconSize: [25, 25],
+    }),
+  fire_station: new Icon({
+    iconUrl: "/fire.png",
+    iconSize: [25, 25],
+  }),
+  shop: new Icon({
+    iconUrl: "/money.png",
+    iconSize: [25, 25],
+  })
+}
+
+const passiveObjectIcons = {
+  hospital: new Icon(
+    {
+      iconUrl: "/hospital_passive.png",
+      iconSize: [25, 25],
+    }),
+  fire_station: new Icon({
+    iconUrl: "/fire_passive.png",
+    iconSize: [25, 25],
+  }),
+  shop: new Icon({
+    iconUrl: "/money_passive.png",
+    iconSize: [25, 25],
+  })
+}
 
 export const Node = (props) => {
   if (props.nodeType === "passive") {
     return (
       <Marker
         position={[props.node.y, props.node.x]}
-        icon={props.node.tag === "apartments" ? passiveHouse : passiveInfra}
+        icon={props.node.tag === "apartments" ? passiveHouse : passiveObjectIcons[props.node.tag]}
       />
     );
   } else {
     return (
       <Marker
         position={[props.node.y, props.node.x]}
-        icon={props.node.tag === "apartments" ? house : infra}
+        icon={props.node.tag === "apartments" ? house : activeObjectIcons[props.node.tag]}
         onclick={props.onClick}
       />
     );
