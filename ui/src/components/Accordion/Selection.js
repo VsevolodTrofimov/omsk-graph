@@ -25,12 +25,8 @@ export const Selection = () => {
   );
   const [selectedInfra, setSelectedInfra] = useRecoilState(selectedInfraState);
 
-  const [randomHousesCount, setRandomHousesCount] = useState(
-    selectedHouses.length
-  );
-  const [randomInfraCount, setRandomInfraCount] = useState(
-    selectedInfra.length
-  );
+  const [randomHousesCount, setRandomHousesCount] = useState(10);
+  const [randomInfraCount, setRandomInfraCount] = useState(5);
 
   return (
     <Space direction="vertical" className="section" size="small">
