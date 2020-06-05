@@ -2,6 +2,17 @@ import { atom, selector } from "recoil";
 import graph from "./graph.json";
 import dist from "./1.1.json";
 
+const houses = [];
+const infra = [];
+
+Object.keys(graph).forEach((nodeId) => {
+  if (graph[nodeId].tag === "apartments") {
+    houses.push(nodeId);
+  } else if (graph[nodeId].tag) {
+    infra.push(nodeId);
+  }
+});
+
 export const selectedHousesState = atom({
   key: "pojebat",
   default: ["6143120", "31634315", "31638933", "31645187"],
@@ -87,4 +98,22 @@ function getPathBetween(startId, endId, pathType) {
       ? dist["paths"][`${startId}-${endId}`]["route"]
       : dist["paths"][startId][endId]["route"];
   return route.map((nodeId) => [graph[nodeId].y, graph[nodeId].x]);
+}
+
+function getSample(arr, n) {
+  let result = new Array(n),
+    len = arr.length,
+    taken = new Array(len);
+  if (n > len)
+    throw new RangeError("getRandom: more elements taken than available");
+  while (n--) {
+    let x = Math.floor(Math.random() * len);
+    result[n] = arr[x in taken ? taken[x] : x];
+    taken[x] = --len in taken ? taken[len] : len;
+  }
+  return result;
+}
+
+export function getRandom(houseCount, infraCount) {
+  return [getSample(houses, houseCount), getSample(infra, infraCount)];
 }
