@@ -1,8 +1,6 @@
 import React from "react";
-import { Map, TileLayer, Marker, Popup, Polyline } from "react-leaflet";
-import graph from "./graph.json";
+import { Map, TileLayer, Popup, Polyline } from "react-leaflet";
 import PopupContent from "./PopupContent";
-import { Icon } from "leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import { useRecoilState, useRecoilValue } from "recoil";
@@ -13,24 +11,8 @@ import {
   startHouseState,
   pathTypeState,
 } from "./store";
-import MarkerComp from "./MarkerComp";
-
-let houses = {};
-for (let [key, value] of Object.entries(graph)) {
-  if (value.tag === "apartments") {
-    houses[key] = value;
-  }
-}
-
-const house = new Icon({
-  iconUrl: "/activeHouse.png",
-  iconSize: [25, 25],
-});
-
-const infra = new Icon({
-  iconUrl: "/activeInfra.png",
-  iconSize: [25, 25],
-});
+import { Node } from "./Node";
+import { Nodes } from "./Nodes";
 
 export default function MapContainer() {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
@@ -54,27 +36,17 @@ export default function MapContainer() {
     >
       <TileLayer url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" />
       <MarkerClusterGroup>
-        {Object.keys(passiveNodes).map((nodeId) => (
-          <MarkerComp
-            nodeId={nodeId}
-            nodeType="passive"
-            nodeTag={passiveNodes[nodeId].tag}
-            nodePosition={[passiveNodes[nodeId].y, passiveNodes[nodeId].x]}
-          />
-        ))}
+        <Nodes nodes={passiveNodes} nodeType="passive" />
       </MarkerClusterGroup>
-      {Object.keys(selectedNodes).map((key) => (
-        <Marker
-          key={key}
-          position={[selectedNodes[key].y, selectedNodes[key].x]}
-          icon={selectedNodes[key].tag === "apartments" ? house : infra}
-          onclick={() => {
-            setPopUpHouse(key);
-            setStartHouse(null);
-            setPathType(null);
-          }}
-        />
-      ))}
+      <Nodes
+        nodes={selectedNodes}
+        nodeType="active"
+        onNodeClick={(nodeId) => {
+          setPopUpHouse(nodeId);
+          setStartHouse(null);
+          setPathType(null);
+        }}
+      />
       {popupHouse && (
         <Popup
           key={popupHouse}
