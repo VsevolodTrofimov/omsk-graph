@@ -36,9 +36,9 @@ def solve_21(graph, houses, infra, speed=40):
     print(f"infra: {infra}, paths len= {paths_length}, tree weight= {tree['weight']}")
     return {
         'id': infra,
-        'length': paths_length,
-        'weight': tree['weight'],
-        'edges': tree['edges']  # set of edges (id1, id2)
+        'pathsLengthSum': paths_length,
+        'treeLength': tree['weight'],
+        'treeEdges': tree['edges']  # set of edges (id1, id2)
     }
 
 
