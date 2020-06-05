@@ -5,7 +5,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import "react-leaflet-markercluster/dist/styles.min.css";
 import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import {
-  pathClosestObject,
+  task11PathToClosestObject,
   splitNodes,
   popupHouseState,
   startHouseState,
@@ -17,7 +17,7 @@ export default function MapContainer() {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
   const setStartHouse = useSetRecoilState(startHouseState);
   const setPathType = useSetRecoilState(pathTypeState);
-  const path = useRecoilValue(pathClosestObject);
+  const path = useRecoilValue(task11PathToClosestObject);
   const { passiveNodes, selectedNodes } = useRecoilValue(splitNodes);
 
   return (
