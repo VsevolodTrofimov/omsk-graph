@@ -1,14 +1,14 @@
 import lib
 
 
-def task1_2(G, houses, infra):
+def solve_12(G, houses, infra, speed=40):
     # ----
     # 1.1a Find closest houses and objects
     # ----
     houseObjPaths = lib.getManyToManyPaths(
-        G, houses, infra, lib.speed)
+        G, houses, infra, speed)
     objHousePaths = lib.getManyToManyPaths(
-        G, infra, houses, lib.speed)
+        G, infra, houses, speed)
     roundPaths = {}
 
     # Make round paths form them

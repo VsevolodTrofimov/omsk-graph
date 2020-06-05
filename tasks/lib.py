@@ -1,9 +1,6 @@
 import osmnx as ox
 import networkx as nx
 
-speed = 40  # km/h
-
-
 def load():
     return ox.save_load.load_graphml('../../prepare/data/city.graphml')
 

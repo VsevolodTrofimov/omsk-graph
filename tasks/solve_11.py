@@ -42,14 +42,14 @@ def round2HouseObj(arr):
     return result
 
 
-def task1_1(G, houses, infra, maxTime=0, maxDistance=0):
+def solve_11(G, houses, infra, maxTime=0, maxDistance=0, speed=40):
     # ----
     # 1.1a Find closest houses and objects
     # ----
     houseObjPaths = lib.getManyToManyPaths(
-        G, houses, infra, lib.speed)
+        G, houses, infra, speed)
     objHousePaths = lib.getManyToManyPaths(
-        G, infra, houses, lib.speed)
+        G, infra, houses, speed)
     roundPaths = {}
 
     # Make round paths form them
