@@ -89,4 +89,4 @@ def routes_to_tree(graph, routes):
             if edge not in edges:
                 tree_weight += graph[edge[0]][edge[1]][0]['length']
                 edges.add(edge)
-    return {'edges': edges, 'weight': tree_weight}
+    return {'edges': list(edges), 'weight': tree_weight}

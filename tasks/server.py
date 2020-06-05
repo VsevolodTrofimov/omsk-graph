@@ -14,7 +14,6 @@ G = lib.load()
 @app.route('/1.1', methods=['POST'])
 def task_11():
     params = request.json
-    print(request.json)
 
     return solve_11(
         G, 

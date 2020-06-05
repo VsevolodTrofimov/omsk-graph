@@ -71,11 +71,25 @@ def solve_22_24(graph, houses, infra, speed=40):
         paths_length = sum(route['length'] for route in routes.values())
         routes = [route['route'] for route in routes.values()]
         tree = lib.routes_to_tree(graph, routes)
+
+        intTrees = list(map(
+            lambda tree: {
+                "edges": list(map(
+                    lambda edge: [int(edge[0]), int(edge[1])], 
+                    tree['edges']
+                )),
+                "weight": tree["weight"]
+            }, 
+            trees
+        ))
+
+        print(intTrees)
+
         solution[k] = {
-            # 'centroidTree': tree,            # 2.3b
-            # 'centroidLength': paths_length,  # 2.3b (suddenly need)
-            # 'clusterTrees': trees,           # 2.3cd
-            # 'clusterLengths': lengths,       # 2.3cd
-            # 'centroids': centroids    # 2.3a
+            'centroidTree': tree,            # 2.3b
+            'centroidLength': paths_length,  # 2.3b (suddenly need)
+            'clusterTrees': intTrees,           # 2.3cd
+            'clusterLengths': lengths,       # 2.3cd
+            'centroids': list(map(int, centroids))    # 2.3a
         }
     return solution
