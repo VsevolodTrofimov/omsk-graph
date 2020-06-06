@@ -137,34 +137,35 @@ export const SectionOne = () => {
         </Panel>
 
         <Panel header="1.3 Сумма кратчайших расстояний" key="3">
-          <Button
-            type="primary"
-            loading={isLoading}
-            onClick={async () => {
-              setIsLoading(true);
-              const result = await api("1.3", {
-                houses: selectedHouses,
-                infra: selectedInfra,
-              });
-              setIsLoading(false);
-              if (result) {
-                setPaths(result.paths);
-                setStartHouse(null);
-                set13(result);
-                setTask("1.3");
-
-              }
-            }}
-          >
-            Найти
+          <Space direction="vertical">
+            <Button
+              type="primary"
+              loading={isLoading}
+              onClick={async () => {
+                setIsLoading(true);
+                const result = await api("1.3", {
+                  houses: selectedHouses,
+                  infra: selectedInfra,
+                });
+                setIsLoading(false);
+                if (result) {
+                  setPaths(result.paths);
+                  setStartHouse(null);
+                  set13(result);
+                  setTask("1.3");
+                }
+              }}
+            >
+              Найти
             </Button>
-          {task13 && (
-            <Descriptions layout="horizontal" column={1} bordered>
-              <Descriptions.Item label="Сумма кратчайших расстояний">
-                {task13.length.toFixed(0)}м
+            {task13 && (
+              <Descriptions layout="horizontal" column={1} bordered>
+                <Descriptions.Item label="Сумма кратчайших расстояний">
+                  {task13.length.toFixed(0)}м
                 </Descriptions.Item>
-            </Descriptions>
-          )}
+              </Descriptions>
+            )}
+          </Space>
         </Panel>
 
         <Panel header="1.4 Найти минимальное дерево кратчайших путей" key="4">
