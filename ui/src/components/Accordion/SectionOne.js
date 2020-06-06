@@ -156,7 +156,7 @@ export const SectionOne = () => {
                 }
               }}
             >
-              Построить
+              Найти
             </Button>
             {task14 && (
               <Descriptions layout="horizontal" column={1} bordered>
