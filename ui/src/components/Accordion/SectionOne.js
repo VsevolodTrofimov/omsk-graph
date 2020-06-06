@@ -38,20 +38,16 @@ export const SectionOne = () => {
             В радиусе
             <InputNumber
               min={0}
-              formatter={(value) =>
-                `${value} м`.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-              }
-              parser={(value) => value.replace(/\$\s?|(,*)/g, "")}
+              formatter={(value) => `${value} м`}
+              parser={(value) => value.split(" ")[0]}
               value={maxDistance}
               onChange={setMaxDistance}
             />
             или
             <InputNumber
               min={0}
-              formatter={(value) =>
-                `${value} мин`.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
-              }
-              parser={(value) => value.replace(/\$\s?|(,*)/g, "")}
+              formatter={(value) => `${value} мин`}
+              parser={(value) => value.split(" ")[0]}
               value={maxTime}
               onChange={setMaxTime}
             />
