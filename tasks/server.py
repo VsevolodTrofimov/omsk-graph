@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, send_file
 from flask_cors import CORS
 from solve_11 import solve_11
 from solve_12 import solve_12
@@ -77,3 +77,10 @@ def task_22_24():
         params['infra'][0],
         params['clusterCount']
     )
+
+
+@app.route('/dendrogram', methods=['GET'])
+def dendrogram():
+    params = request.json
+
+    return send_file('./dendrogram.png')

@@ -149,9 +149,18 @@ export const SectionTwo = () => {
               </Button>
             </Space>
             {task22 && (
-              <Descriptions column={1} bordered>
-                <Descriptions.Item label="Длина дерева" layout="horizontal">
+              <Descriptions column={1} bordered layout="horizontal">
+                <Descriptions.Item label="Длина дерева">
                   {task22.centroidLength.toFixed(0)} м
+                </Descriptions.Item>
+                <Descriptions.Item label="Дендрограмма">
+                  <Button
+                    onClick={() =>
+                      window.open("http://localhost:5000/dendrogram", "_blank")
+                    }
+                  >
+                    Открыть в новой вкладке
+                  </Button>
                 </Descriptions.Item>
               </Descriptions>
             )}

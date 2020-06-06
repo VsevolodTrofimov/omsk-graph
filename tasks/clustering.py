@@ -46,4 +46,4 @@ def plot_dendrogram(dist_matrix, **kwargs):
     plt.xlabel("Index of point")
     plt.ylabel("Distance")
     #plt.show()
-    plt.savefig('dendrogram')
+    plt.savefig('dendrogram', dpi=1000)
