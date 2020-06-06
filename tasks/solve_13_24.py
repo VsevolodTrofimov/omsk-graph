@@ -12,7 +12,7 @@ def solve_13(graph, houses, infra, speed=40):
         length = sum(route['length'] for route in routes.values())
         infra_len_paths[obj] = length
         routes = [route['route'] for route in routes.values()]
-        objRoute[obj] = routes
+        objRoutes[obj] = routes
 
     id_min_length = min(infra_len_paths, key=infra_len_paths.get)
     
