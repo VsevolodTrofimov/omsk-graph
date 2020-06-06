@@ -29,7 +29,7 @@ export const splitNodes = selector({
     const selectedNodes = {};
     const selectedHouses = get(selectedHousesState);
 
-    console.log(selectedHouses);
+    // console.log(selectedHouses);
     for (let nodeId in graph) {
       if (!graph[nodeId].hasOwnProperty("tag")) {
         continue;

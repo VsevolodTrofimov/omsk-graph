@@ -21,6 +21,11 @@ export const maxTimeState = atom({
   default: 15,
 });
 
+export const pathLimitState = atom({
+  key: "pathLimitState",
+  default: null,
+});
+
 
 export const task11ClosesObject = selector({
   key: "getClosestObjState",
@@ -52,4 +57,21 @@ export const task11PathToClosestObject = selector({
 
     return null;
   },
+
 });
+
+export const task11ObjectsInRadius = selector({
+  key: "task11ObjectsInRadius",
+  get: ({ get }) => {
+    const task11 = get(task11Atom);
+    const activeHouseId = get(startHouseState);
+    const pathLimit = get(pathLimitState);
+    const pathType = get(pathTypeState);
+    if (activeHouseId && pathType && task11 && pathLimit) {
+      console.log(task11['inRange'][pathType][pathLimit][activeHouseId]);
+      return task11['inRange'][pathType][pathLimit][activeHouseId];
+    }
+    return null;
+  },
+});
+
