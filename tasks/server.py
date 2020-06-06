@@ -53,7 +53,7 @@ def task_21():
     return solve_21(
         G, 
         params['houses'], 
-        params['infra']
+        params['infra'][0]
     )
 
 

@@ -21,11 +21,16 @@ export const pathTypeState = atom({
   default: null,
 });
 
+export const getNodePosition = (nodeId) => [graph[nodeId].y, graph[nodeId].x];
+
 export function getPathBetween(startId, endId, pathType, paths) {
   const route =
     pathType === "round"
       ? paths[`${startId}-${endId}`]["route"]
       : paths[startId][endId]["route"];
 
-  return route.map((nodeId) => [graph[nodeId].y, graph[nodeId].x]);
+  return route.map(getNodePosition);
 }
+
+export const makeTree = (edges) =>
+  edges.map((edge) => [getNodePosition(edge[0]), getNodePosition(edge[1])]);

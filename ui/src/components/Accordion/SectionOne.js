@@ -11,7 +11,7 @@ import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
-import { pathsAtom } from "../../store/paths";
+import { pathsAtom, startHouseState } from "../../store/paths";
 import { task11Atom, maxTimeState, maxDistanceState } from "../../store/task11";
 import { activeTaskAtom } from "../../store/general";
 
@@ -26,6 +26,7 @@ export const SectionOne = () => {
   const selectedHouses = useRecoilValue(selectedHousesState);
   const selectedInfra = useRecoilValue(selectedInfraState);
   const setPaths = useSetRecoilState(pathsAtom);
+  const setStartHouse = useSetRecoilState(startHouseState);
   const set11 = useSetRecoilState(task11Atom);
   const setTask = useSetRecoilState(activeTaskAtom);
 
@@ -66,6 +67,7 @@ export const SectionOne = () => {
 
                 if (result) {
                   setPaths(result.paths);
+                  setStartHouse(null);
                   set11(result);
                   setTask("1.1b");
                 }
@@ -87,6 +89,7 @@ export const SectionOne = () => {
 
               if (result) {
                 setPaths(result.paths);
+                setStartHouse(null);
                 set11(result);
                 setTask("1.1a");
               }
