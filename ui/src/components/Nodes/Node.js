@@ -27,6 +27,19 @@ const activeObjectIcons = {
   }),
 };
 
+const getColoredSvg = (color) => {
+  let svgString = `
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+      <circle cx="12" cy="12" r="8"  fill="${color}"/>
+    </svg>`;
+  let myIconUrl = encodeURI("data:image/svg+xml," + svgString).replace(
+    "#",
+    "%23"
+  );
+
+  return new Icon({ iconUrl: myIconUrl, iconSize: 12 });
+};
+
 const passiveObjectIcons = {
   hospital: new Icon({
     iconUrl: "/hospital_passive.png",
@@ -40,6 +53,7 @@ const passiveObjectIcons = {
     iconUrl: "/money_passive.png",
     iconSize: [25, 25],
   }),
+  undefined: getColoredSvg("#000"),
 };
 
 export const Node = (props) => {

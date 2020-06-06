@@ -27,11 +27,12 @@ export const splitNodes = selector({
   get: ({ get }) => {
     const passiveNodes = {};
     const selectedNodes = {};
+    const roadNodes = {};
     const selectedHouses = get(selectedHousesState);
 
     for (let nodeId in graph) {
       if (!graph[nodeId].hasOwnProperty("tag")) {
-        continue;
+        roadNodes[nodeId] = graph[nodeId];
       } else {
         if (
           selectedHouses.includes(nodeId) ||
@@ -43,7 +44,7 @@ export const splitNodes = selector({
         }
       }
     }
-    return { passiveNodes, selectedNodes };
+    return { passiveNodes, selectedNodes, roadNodes };
   },
 });
 

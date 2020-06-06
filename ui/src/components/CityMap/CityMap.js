@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Map, TileLayer, Popup, Polyline, Marker } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import "react-leaflet-markercluster/dist/styles.min.css";
@@ -87,12 +87,10 @@ const Task13 = () => {
   console.log(path, 13);
   return path
     ? path.map((currentPath) => {
-
-      // const currentPath = getPathBetween(startHouse, node, pathType, paths);
       return <Polyline positions={currentPath} />;
     })
     : null;
-}
+};
 
 const Task14 = () => {
   const path = useRecoilValue(task14Tree);
@@ -155,11 +153,14 @@ const MapTaskMarkers = () => {
   return <Component />;
 };
 
+const noRoads = {};
+
 export const CityMap = () => {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
   const setStartHouse = useSetRecoilState(startHouseState);
   const setPathType = useSetRecoilState(pathTypeState);
-  const { passiveNodes, selectedNodes } = useRecoilValue(splitNodes);
+  const { passiveNodes, selectedNodes, roadNodes } = useRecoilValue(splitNodes);
+  const [roads, setRoads] = useState(noRoads);
 
   const setActiveHouse = React.useCallback(
     (nodeId) => {
@@ -168,6 +169,35 @@ export const CityMap = () => {
       setPathType(null);
     },
     [setPathType, setStartHouse, setPopUpHouse]
+  );
+
+  const onZoomChange = React.useCallback(
+    (event) => {
+      const zoom = event.target.getZoom();
+      const bounds = event.target.getBounds();
+      const top = bounds.getNorth();
+      const left = bounds.getWest();
+      const right = bounds.getEast();
+      const bottom = bounds.getSouth();
+
+      if (zoom < 17) {
+        setRoads(noRoads);
+      } else {
+        const nextRoads = {};
+        for (const road in roadNodes) {
+          if (
+            roadNodes[road].y <= top &&
+            roadNodes[road].y >= bottom &&
+            roadNodes[road].x >= left &&
+            roadNodes[road].x <= right
+          ) {
+            nextRoads[road] = roadNodes[road];
+          }
+        }
+        setRoads(nextRoads);
+      }
+    },
+    [setRoads, roadNodes]
   );
 
   return (
@@ -180,6 +210,8 @@ export const CityMap = () => {
       doubleClickZoom={true}
       scrollWheelZoom={true}
       dragging={true}
+      onzoomlevelschange={onZoomChange}
+      onmove={onZoomChange}
       animate={true}
       easeLinearity={0.35}
     >
@@ -191,6 +223,7 @@ export const CityMap = () => {
           onNodeClick={setPopUpHouse}
         />
       </MarkerClusterGroup>
+      <Nodes nodes={roads} nodeType="passive" />
       <Nodes
         nodes={selectedNodes}
         nodeType="active"
