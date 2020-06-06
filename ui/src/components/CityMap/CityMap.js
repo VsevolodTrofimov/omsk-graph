@@ -11,8 +11,10 @@ import {
   startHouseState,
   pathTypeState,
   popupHouseState,
+  pathsAtom,
+  getPathBetween,
 } from "../../store/paths";
-import { task11PathToClosestObject } from "../../store/task11";
+import { task11PathToClosestObject, task11ObjectsInRadius } from "../../store/task11";
 import { splitNodes } from "../../store/selection";
 
 import "./CityMap.css";
@@ -24,8 +26,16 @@ const Task11a = () => {
 };
 
 const Task11b = () => {
-  const path = useRecoilValue(task11PathToClosestObject);
-  return path && <Polyline positions={path} />;
+  const startHouse = useRecoilValue(startHouseState);
+  const path = useRecoilValue(task11ObjectsInRadius);
+  const paths = useRecoilValue(pathsAtom);
+  const pathType = useRecoilValue(pathTypeState);
+  return path ? (
+    path.map((node) => {
+      const currentPath = getPathBetween(startHouse, node, pathType, paths);
+      return <Polyline positions={currentPath} />
+    })
+  ) : null;
 };
 
 const Task22 = () => {
