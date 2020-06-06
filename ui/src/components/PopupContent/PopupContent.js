@@ -1,5 +1,5 @@
 import React from "react";
-import { Radio, Space, Button, Typography, Divider } from "antd";
+import { Radio, Space, Button, Typography, Divider, Descriptions } from "antd";
 import { useRecoilState, useSetRecoilState, useRecoilValue } from "recoil";
 import graph from "../../graph.json";
 
@@ -15,6 +15,7 @@ import {
   maxTimeState,
   pathLimitState,
 } from "../../store/task11";
+import { task22Atom } from "../../store/task22";
 
 const Task11a = () => {
   const [pathType, setPathType] = useRecoilState(pathTypeState);
@@ -51,7 +52,7 @@ const Task11a = () => {
 
 const Task11b = () => {
   const [pathType, setPathType] = useRecoilState(pathTypeState);
-  const [popupHouseId, setPopupHouseId] = useRecoilState(popupHouseState);
+  const popupHouseId = useRecoilValue(popupHouseState);
   const [pathLimit, setPathLimit] = useRecoilState(pathLimitState);
   const setStartHouse = useSetRecoilState(startHouseState);
   const maxDistance = useRecoilValue(maxDistanceState);
@@ -92,7 +93,27 @@ const Task11b = () => {
 };
 
 const Task22 = () => {
-  return "TODO";
+  const task22 = useRecoilValue(task22Atom);
+  const popupHouse = useRecoilValue(popupHouseState);
+  const centroidIdx = task22.centroids.indexOf(parseInt(popupHouse, 10));
+
+  if (centroidIdx === -1) {
+    return null;
+  }
+
+  const treeLength = task22.clusterTrees[centroidIdx].weight;
+  const clusterLength = task22.clusterLengths[centroidIdx];
+
+  return (
+    <Descriptions bordered layout="horizontal" column={1} size="small">
+      <Descriptions.Item label="Длина дерева кластера">
+        {treeLength.toFixed(0)} м
+      </Descriptions.Item>
+      <Descriptions.Item label="Длина путей в кластере">
+        {clusterLength.toFixed(0)} м
+      </Descriptions.Item>
+    </Descriptions>
+  );
 };
 
 const task2Content = {
@@ -116,9 +137,7 @@ export default function PopupContent() {
   return (
     <div>
       {Component && <Component />}
-      {Component && isSelected && popupHouse && (
-        <Divider style={{ margin: "12px 0" }} />
-      )}
+      {Component && popupHouse && <Divider style={{ margin: "12px 0" }} />}
       {isSelected && popupHouse ? (
         <div>
           <Button

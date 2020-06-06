@@ -17,7 +17,10 @@ import {
   pathsAtom,
   getPathBetween,
 } from "../../store/paths";
-import { task11PathToClosestObject, task11ObjectsInRadius } from "../../store/task11";
+import {
+  task11PathToClosestObject,
+  task11ObjectsInRadius,
+} from "../../store/task11";
 import { splitNodes } from "../../store/selection";
 
 import "./CityMap.css";
@@ -26,6 +29,7 @@ import {
   task22CentroidTree,
   task22ClusterTrees,
   task22CentroidPositions,
+  task22Atom,
 } from "../../store/task22";
 import { task21Tree } from "../../store/task21";
 
@@ -48,12 +52,12 @@ const Task11b = () => {
   const path = useRecoilValue(task11ObjectsInRadius);
   const paths = useRecoilValue(pathsAtom);
   const pathType = useRecoilValue(pathTypeState);
-  return path ? (
-    path.map((node) => {
-      const currentPath = getPathBetween(startHouse, node, pathType, paths);
-      return <Polyline positions={currentPath} />
-    })
-  ) : null;
+  return path
+    ? path.map((node) => {
+        const currentPath = getPathBetween(startHouse, node, pathType, paths);
+        return <Polyline positions={currentPath} />;
+      })
+    : null;
 };
 
 const getColoredSvg = (color) => {
@@ -75,9 +79,11 @@ const Task21 = () => {
 };
 
 const Task22 = () => {
+  const task22 = useRecoilValue(task22Atom);
   const centroidTree = useRecoilValue(task22CentroidTree);
   const centroidPos = useRecoilValue(task22CentroidPositions);
   const clusterTrees = useRecoilValue(task22ClusterTrees);
+  const setPopUpHouse = useSetRecoilState(popupHouseState);
 
   const centroidLine = centroidTree && (
     <Polyline weight={8} opacity={0.5} positions={centroidTree}></Polyline>
@@ -91,6 +97,9 @@ const Task22 = () => {
           <Marker
             position={centroidPos[idx]}
             icon={getColoredSvg(colors[idx])}
+            onclick={() => {
+              setPopUpHouse(String(task22.centroids[idx]));
+            }}
           />
         </React.Fragment>
       ))}
