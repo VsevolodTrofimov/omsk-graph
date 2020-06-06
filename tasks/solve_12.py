@@ -65,11 +65,17 @@ def solve_12(G, houses, infra, speed=40):
     def findMinPath(kind):
         distance = float('inf')
         minObj = None
+        target = None
         for obj in objMax:
             if objMax[obj][kind]["distance"] < distance:
                 distance = objMax[obj][kind]["distance"]
                 minObj = obj
-        return distance, minObj
+                target = objMax[obj][kind]["house"]
+        return {
+            "distance": distance,
+            "start": minObj, 
+            "end": target
+        }
 
     objMinMaxTo = findMinPath('to')
     objMinMaxFrom = findMinPath('from')
