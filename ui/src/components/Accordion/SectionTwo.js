@@ -15,7 +15,7 @@ import { selectedInfraState, selectedHousesState } from "../../store/selection";
 const { Panel } = Collapse;
 const { Text } = Typography;
 
-export const SectionTwo = React.memo(() => {
+export const SectionTwo = () => {
   const [clusterCount, setClusterCount] = useState(2);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -80,4 +80,4 @@ export const SectionTwo = React.memo(() => {
       </Collapse>
     </Space>
   );
-});
+};
