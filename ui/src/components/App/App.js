@@ -1,7 +1,7 @@
 import React from "react";
 import { RecoilRoot } from "recoil";
 
-import MapContainer from "../CityMap/CityMap";
+import { CityMap } from "../CityMap/CityMap";
 import Accordion from "../Accordion/Accordion";
 
 import "./App.css";
@@ -14,7 +14,7 @@ export default function App() {
           <Accordion />
         </div>
         <div className="map">
-          <MapContainer />
+          <CityMap />
         </div>
       </div>
     </RecoilRoot>

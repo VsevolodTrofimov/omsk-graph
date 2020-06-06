@@ -16,12 +16,43 @@ import { task11PathToClosestObject } from "../../store/task11";
 import { splitNodes } from "../../store/selection";
 
 import "./CityMap.css";
+import { activeTaskAtom } from "../../store/general";
 
-export default function MapContainer() {
+const Task11a = () => {
+  const path = useRecoilValue(task11PathToClosestObject);
+  return path && <Polyline positions={path} />;
+};
+
+const Task11b = () => {
+  const path = useRecoilValue(task11PathToClosestObject);
+  return path && <Polyline positions={path} />;
+};
+
+const Task22 = () => {
+  return "TODO";
+};
+
+const task2MapMarkers = {
+  "1.1a": Task11a,
+  "1.1b": Task11b,
+  "2.2": Task22,
+};
+
+const MapTaskMarkers = () => {
+  const activeTask = useRecoilValue(activeTaskAtom);
+  const Component = task2MapMarkers[activeTask];
+
+  if (!Component) {
+    return null;
+  }
+
+  return <Component />;
+};
+
+export const CityMap = () => {
   const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
   const setStartHouse = useSetRecoilState(startHouseState);
   const setPathType = useSetRecoilState(pathTypeState);
-  const path = useRecoilValue(task11PathToClosestObject);
   const { passiveNodes, selectedNodes } = useRecoilValue(splitNodes);
 
   return (
@@ -61,7 +92,7 @@ export default function MapContainer() {
           <PopupContent />
         </Popup>
       )}
-      {path && <Polyline positions={path} />} */}
+      <MapTaskMarkers />
     </Map>
   );
-}
+};

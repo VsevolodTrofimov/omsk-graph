@@ -83,5 +83,10 @@ const task2Content = {
 export default function PopupContent() {
   const activeTask = useRecoilValue(activeTaskAtom);
   const Component = task2Content[activeTask];
+
+  if (!Component) {
+    return null;
+  }
+
   return <Component />;
 }
