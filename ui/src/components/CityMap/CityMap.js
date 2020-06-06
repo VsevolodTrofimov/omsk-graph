@@ -5,6 +5,8 @@ import "react-leaflet-markercluster/dist/styles.min.css";
 import { useRecoilState, useRecoilValue, useSetRecoilState } from "recoil";
 import { Icon } from "leaflet";
 
+import graph from "../../graph.json";
+
 import { Nodes } from "../Nodes/Nodes";
 import PopupContent from "../PopupContent/PopupContent";
 
@@ -111,6 +113,15 @@ export const CityMap = () => {
   const setPathType = useSetRecoilState(pathTypeState);
   const { passiveNodes, selectedNodes } = useRecoilValue(splitNodes);
 
+  const setActiveHouse = React.useCallback(
+    (nodeId) => {
+      setPopUpHouse(nodeId);
+      setStartHouse(null);
+      setPathType(null);
+    },
+    [setPathType, setStartHouse, setPopUpHouse]
+  );
+
   return (
     <Map
       center={[54.9924, 73.3686]}
@@ -126,21 +137,21 @@ export const CityMap = () => {
     >
       <TileLayer url="https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png" />
       <MarkerClusterGroup>
-        <Nodes nodes={passiveNodes} nodeType="passive" />
+        <Nodes
+          nodes={passiveNodes}
+          nodeType="passive"
+          onNodeClick={setPopUpHouse}
+        />
       </MarkerClusterGroup>
       <Nodes
         nodes={selectedNodes}
         nodeType="active"
-        onNodeClick={(nodeId) => {
-          setPopUpHouse(nodeId);
-          setStartHouse(null);
-          setPathType(null);
-        }}
+        onNodeClick={setActiveHouse}
       />
       {popupHouse && (
         <Popup
           key={popupHouse}
-          position={[selectedNodes[popupHouse].y, selectedNodes[popupHouse].x]}
+          position={[graph[popupHouse].y, graph[popupHouse].x]}
           onClose={() => {
             setPopUpHouse(null);
           }}

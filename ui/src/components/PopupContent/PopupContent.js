@@ -1,5 +1,5 @@
 import React from "react";
-import { Radio, Space } from "antd";
+import { Radio, Space, Button, Typography, Divider } from "antd";
 import { useRecoilState, useSetRecoilState, useRecoilValue } from "recoil";
 import graph from "../../graph.json";
 
@@ -9,6 +9,7 @@ import {
   startHouseState,
 } from "../../store/paths";
 import { activeTaskAtom } from "../../store/general";
+import { selectedHousesState, selectedInfraState } from "../../store/selection";
 
 const Task11a = () => {
   const [pathType, setPathType] = useRecoilState(pathTypeState);
@@ -19,7 +20,9 @@ const Task11a = () => {
 
   return (
     <Space direction="vertical" size="small">
-      Путь до ближайшего {isHouse ? "объекта" : "дома"}
+      <Typography.Text>
+        Путь до ближайшего {isHouse ? "объекта" : "дома"}
+      </Typography.Text>
       <Radio.Group
         onChange={(e) => {
           setPathType(e.target.value);
@@ -82,11 +85,50 @@ const task2Content = {
 
 export default function PopupContent() {
   const activeTask = useRecoilValue(activeTaskAtom);
+  const [popupHouse, setPopUpHouse] = useRecoilState(popupHouseState);
+  const [selectedHouses, setSelectedHouses] = useRecoilState(
+    selectedHousesState
+  );
+  const [selectedInfra, setSelectedInfra] = useRecoilState(selectedInfraState);
   const Component = task2Content[activeTask];
 
-  if (!Component) {
-    return null;
-  }
+  const isSelected =
+    selectedHouses.includes(popupHouse) || selectedInfra.includes(popupHouse);
 
-  return <Component />;
+  return (
+    <div>
+      {Component && <Component />}
+      {Component && isSelected && popupHouse && (
+        <Divider style={{ margin: "12px 0" }} />
+      )}
+      {isSelected && popupHouse ? (
+        <div>
+          <Button
+            onClick={() => {
+              setSelectedHouses(selectedHouses.filter((x) => x !== popupHouse));
+              setSelectedInfra(selectedInfra.filter((x) => x !== popupHouse));
+              setPopUpHouse(null);
+            }}
+          >
+            Убрать из выбранных {popupHouse}
+          </Button>
+        </div>
+      ) : (
+        <div>
+          <Button
+            onClick={() => {
+              if (graph[popupHouse].tag === "apartments") {
+                setSelectedHouses([...selectedHouses, popupHouse]);
+              } else {
+                setSelectedInfra([...selectedInfra, popupHouse]);
+              }
+              setPopUpHouse(null);
+            }}
+          >
+            Выбрать {popupHouse}
+          </Button>
+        </div>
+      )}
+    </div>
+  );
 }
