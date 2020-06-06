@@ -35,7 +35,7 @@ export const Selection = () => {
         <Panel header="Выбранные дома" key="1">
           <TagList tags={selectedHouses} />
         </Panel>
-        <Panel header="Выбранные обЪекты инфраструктуры" key="2">
+        <Panel header="Выбранные объекты инфраструктуры" key="2">
           <TagList tags={selectedInfra} />
         </Panel>
         <Panel header="Выбрать случайные дома и объекты" key="3">
