@@ -6,11 +6,14 @@ import {
   Typography,
   InputNumber,
   notification,
+  Descriptions,
 } from "antd";
-import { useRecoilValue, useRecoilState } from "recoil";
+import { useRecoilValue, useRecoilState, useSetRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
+import { task22Atom } from "../../store/task22";
+import { activeTaskAtom } from "../../store/general";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
@@ -21,6 +24,8 @@ export const SectionTwo = () => {
 
   const selectedHouses = useRecoilValue(selectedHousesState);
   const [selectedInfra, setSelectedInfra] = useRecoilState(selectedInfraState);
+  const [task22, setTask22] = useRecoilState(task22Atom);
+  const setTask = useSetRecoilState(activeTaskAtom);
 
   const callForClusters = async (infra = selectedInfra) => {
     if (infra.length > 1) {
@@ -50,7 +55,10 @@ export const SectionTwo = () => {
         clusterCount: clusterCount,
       });
       setIsLoading(false);
-      console.log(result);
+      if (result) {
+        setTask22(result);
+        setTask("2.2");
+      }
     }
   };
 
@@ -76,6 +84,13 @@ export const SectionTwo = () => {
               Вычислить кластеры
             </Button>
           </Space>
+          {task22 && (
+            <Descriptions title="Результаты">
+              <Descriptions.Item label="Длина дерева">
+                {task22.centroidLength} м
+              </Descriptions.Item>
+            </Descriptions>
+          )}
         </Panel>
       </Collapse>
     </Space>

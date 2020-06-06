@@ -11,14 +11,6 @@ import { selectedHousesState, selectedInfraState } from "../../store/selection";
 
 const ActiveTask = () => {
   const activeTask = useRecoilValue(activeTaskAtom);
-  return (
-    activeTask && (
-      <Typography.Text>Активное задание {activeTask}</Typography.Text>
-    )
-  );
-};
-
-export default function Accordion() {
   const setActiveTask = useSetRecoilState(activeTaskAtom);
   const selectedHouses = useRecoilValue(selectedHousesState);
   const selectedInfra = useRecoilValue(selectedInfraState);
@@ -28,6 +20,14 @@ export default function Accordion() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [[...selectedHouses, ...selectedInfra].join(",")]);
 
+  return (
+    activeTask && (
+      <Typography.Text>Активное задание {activeTask}</Typography.Text>
+    )
+  );
+};
+
+export default function Accordion() {
   return (
     <Space direction="vertical" className="section" size="large">
       <ActiveTask />
