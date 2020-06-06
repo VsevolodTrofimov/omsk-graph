@@ -60,7 +60,11 @@ const Task11b = () => {
     ? path.map((node, idx) => {
         const currentPath = getPathBetween(startHouse, node, pathType, paths);
         return (
-          <Polyline positions={currentPath} color={colors[idx] || "blue"} />
+          <Polyline
+            positions={currentPath}
+            color={colors[idx] || "blue"}
+            key={idx}
+          />
         );
       })
     : null;
@@ -86,11 +90,15 @@ const Task12 = () => {
 
 const Task13 = () => {
   const path = useRecoilValue(task13ShortestDistances);
-  console.log(path, 13);
+
   return path
     ? path.map((currentPath, idx) => {
         return (
-          <Polyline positions={currentPath} color={colors[idx] || "blue"} />
+          <Polyline
+            positions={currentPath}
+            color={colors[idx] || "blue"}
+            key={idx}
+          />
         );
       })
     : null;

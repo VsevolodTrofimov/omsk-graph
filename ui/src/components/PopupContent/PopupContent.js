@@ -58,37 +58,34 @@ const Task11b = () => {
   const maxDistance = useRecoilValue(maxDistanceState);
   const maxTime = useRecoilValue(maxTimeState);
   return (
-    <div>
-      <div> Направление </div>
-      <Radio.Group
-        onChange={(e) => {
-          setPathType(e.target.value);
-          setStartHouse(popupHouseId);
-        }}
-        value={pathType}
-      >
-        {graph[popupHouseId].tag === "apartments" && (
-          <div>
+    <Space direction="vertical" size="small">
+      {graph[popupHouseId].tag === "apartments" && (
+        <React.Fragment>
+          <div> Направление </div>
+          <Radio.Group
+            onChange={(e) => {
+              setPathType(e.target.value);
+              setStartHouse(popupHouseId);
+            }}
+            value={pathType}
+          >
             <Radio.Button value="to"> Туда </Radio.Button>
             <Radio.Button value="round">Туда-обратно </Radio.Button>
-          </div>
-        )}
-      </Radio.Group>
-      <div> В радиусе </div>
-      <Radio.Group
-        onChange={(e) => {
-          setPathLimit(e.target.value);
-        }}
-        value={pathLimit}
-      >
-        {graph[popupHouseId].tag === "apartments" && (
-          <div>
-            <Radio.Button value="byDist"> {maxDistance}</Radio.Button>
-            <Radio.Button value="byTime">{maxTime}</Radio.Button>
-          </div>
-        )}
-      </Radio.Group>
-    </div>
+          </Radio.Group>
+
+          <div> В радиусе </div>
+          <Radio.Group
+            onChange={(e) => {
+              setPathLimit(e.target.value);
+            }}
+            value={pathLimit}
+          >
+            <Radio.Button value="byDist">{maxDistance}м</Radio.Button>
+            <Radio.Button value="byTime">{maxTime}мин</Radio.Button>
+          </Radio.Group>
+        </React.Fragment>
+      )}
+    </Space>
   );
 };
 

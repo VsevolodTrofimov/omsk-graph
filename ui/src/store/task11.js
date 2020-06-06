@@ -13,7 +13,7 @@ export const task11Atom = atom({
 
 export const maxDistanceState = atom({
   key: "maxDistanceState",
-  default: 4000,
+  default: 10000,
 });
 
 export const maxTimeState = atom({
