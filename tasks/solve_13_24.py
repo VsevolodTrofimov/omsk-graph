@@ -23,12 +23,14 @@ def solve_13(graph, houses, infra, speed=40):
 def solve_14(graph, houses, infra, speed=40):
     infra_len_paths = defaultdict()
     infra_weight_tree = defaultdict()
+    objTree = {}
     for obj in infra:
         routes = lib.getFromSingleToManyPaths(graph, obj, houses, speed)
         length = sum(route['length'] for route in routes.values())
         infra_len_paths[obj] = length
         routes = [route['route'] for route in routes.values()]
         tree = lib.routes_to_tree(graph, routes)
+        objTree[obj] = tree
         infra_weight_tree[obj] = tree['weight']
     
     id_min_weight = min(infra_weight_tree, key=infra_weight_tree.get)
@@ -36,7 +38,7 @@ def solve_14(graph, houses, infra, speed=40):
     return {
         'id': id_min_weight,
         'weight': infra_weight_tree[id_min_weight],
-        'tree': tree
+        'tree': objTree[id_min_weight]
     }
 
 
