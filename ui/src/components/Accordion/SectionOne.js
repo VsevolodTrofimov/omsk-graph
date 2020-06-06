@@ -12,7 +12,7 @@ import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
-import { pathsAtom, startHouseState } from "../../store/paths";
+import { pathsAtom, startHouseState, pathTypeState } from "../../store/paths";
 import { task11Atom, maxTimeState, maxDistanceState } from "../../store/task11";
 import { task12Atom } from "../../store/task12";
 import { activeTaskAtom } from "../../store/general";
@@ -32,6 +32,7 @@ export const SectionOne = () => {
   const set11 = useSetRecoilState(task11Atom);
   const set12 = useSetRecoilState(task12Atom);
   const setTask = useSetRecoilState(activeTaskAtom);
+  const [pathType, setPathType] = useRecoilState(pathTypeState);
 
   return (
     <Space direction="vertical" className="section" size="small">
@@ -103,8 +104,9 @@ export const SectionOne = () => {
         </Panel>
         <Panel header="1.2 Минимальное расстояние до дальнего дома" key="2">
           <Radio.Group
-            defaultValue={undefined}
-            onChange={async () => {
+            value={pathType}
+            onChange={async (e) => {
+              setPathType(e.target.value);
               const result = await api("1.2", {
                 houses: selectedHouses,
                 infra: selectedInfra,

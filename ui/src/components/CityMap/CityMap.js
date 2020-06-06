@@ -23,6 +23,10 @@ import {
 } from "../../store/task11";
 import { splitNodes } from "../../store/selection";
 
+import {
+  task12MinPathMaxObject,
+} from "../../store/task12";
+
 import "./CityMap.css";
 import { activeTaskAtom } from "../../store/general";
 import {
@@ -54,9 +58,9 @@ const Task11b = () => {
   const pathType = useRecoilValue(pathTypeState);
   return path
     ? path.map((node) => {
-        const currentPath = getPathBetween(startHouse, node, pathType, paths);
-        return <Polyline positions={currentPath} />;
-      })
+      const currentPath = getPathBetween(startHouse, node, pathType, paths);
+      return <Polyline positions={currentPath} />;
+    })
     : null;
 };
 
@@ -73,10 +77,10 @@ const getColoredSvg = (color) => {
   return new Icon({ iconUrl: myIconUrl, iconSize: 50 });
 };
 
-// const Task12 = () => {
-//   const path = useRecoilValue(task12MinPathToMaxObject);
-//   return path && <Polyline positions={path} />;
-// };
+const Task12 = () => {
+  const path = useRecoilValue(task12MinPathMaxObject);
+  return path && <Polyline positions={path} />;
+};
 
 const Task21 = () => {
   const path = useRecoilValue(task21Tree);
@@ -116,6 +120,7 @@ const Task22 = () => {
 const task2MapMarkers = {
   "1.1a": Task11a,
   "1.1b": Task11b,
+  "1.2": Task12,
   "2.1": Task21,
   "2.2": Task22,
 };
