@@ -1,10 +1,5 @@
 import { atom, selector } from "recoil";
-import {
-  pathTypeState,
-  getPathBetween,
-  pathsAtom,
-  getNodePosition,
-} from "./paths";
+import { getNodePosition } from "./paths";
 
 export const task13Atom = atom({
   key: "task13",
@@ -17,7 +12,7 @@ export const task13ShortestDistances = selector({
     const task13 = get(task13Atom);
     if (task13) {
       console.log(task13["routes"]);
-      return task13["routes"].map((route) => route.map(getNodePosition))
+      return task13["routes"].map((route) => route.map(getNodePosition));
     }
     return null;
   },
