@@ -6,6 +6,7 @@ import {
   Typography,
   InputNumber,
   Divider,
+  Radio,
 } from "antd";
 import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 
@@ -13,6 +14,7 @@ import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
 import { pathsAtom, startHouseState } from "../../store/paths";
 import { task11Atom, maxTimeState, maxDistanceState } from "../../store/task11";
+import { task12Atom } from "../../store/task12";
 import { activeTaskAtom } from "../../store/general";
 
 const { Panel } = Collapse;
@@ -28,6 +30,7 @@ export const SectionOne = () => {
   const setPaths = useSetRecoilState(pathsAtom);
   const setStartHouse = useSetRecoilState(startHouseState);
   const set11 = useSetRecoilState(task11Atom);
+  const set12 = useSetRecoilState(task12Atom);
   const setTask = useSetRecoilState(activeTaskAtom);
 
   return (
@@ -98,10 +101,35 @@ export const SectionOne = () => {
             Найти независимо от расстояния
           </Button>
         </Panel>
-        <Panel header="1.2 Минимальное расстояние до дальнего дома" key="2" />
+        <Panel header="1.2 Минимальное расстояние до дальнего дома" key="2">
+          <Radio.Group
+            defaultValue={undefined}
+            onChange={async () => {
+              const result = await api("1.2", {
+                houses: selectedHouses,
+                infra: selectedInfra,
+              });
+              if (result) {
+                setPaths(result.paths);
+                setStartHouse(null);
+                set12(result);
+                setTask("1.2");
+              }
+            }}
+          >
+            <Radio.Button value="to"> Туда </Radio.Button>
+            <Radio.Button value="from"> Обратно </Radio.Button>
+            <Radio.Button value="round"> Туда-обратно </Radio.Button>
+          </Radio.Group>
+        </Panel>
+
+
+
+
+
         <Panel header="1.3 Сумма кратчайших расстояний" key="3" />
         <Panel header="1.4 Найти минимальное дерево кратчайших путей" key="4" />
-      </Collapse>
-    </Space>
+      </Collapse >
+    </Space >
   );
 };
