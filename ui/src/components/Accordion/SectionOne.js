@@ -7,25 +7,27 @@ import {
   InputNumber,
   Divider,
 } from "antd";
-import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
 import { pathsAtom } from "../../store/paths";
-import { task11Atom, maxDistanceState, maxTimeState } from "../../store/task11";
+import { task11Atom } from "../../store/task11";
+import { activeTaskAtom } from "../../store/general";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
 
 export const SectionOne = () => {
-  const [maxDistance, setMaxDistance] = useRecoilState(maxDistanceState);
-  const [maxTime, setMaxTime] = useRecoilState(maxTimeState);
+  const [maxDistance, setMaxDistance] = useState(4000);
+  const [maxTime, setMaxTime] = useState(15);
   const [isLoading, setIsLoading] = useState(false);
 
   const selectedHouses = useRecoilValue(selectedHousesState);
   const selectedInfra = useRecoilValue(selectedInfraState);
   const setPaths = useSetRecoilState(pathsAtom);
   const set11 = useSetRecoilState(task11Atom);
+  const setTask = useSetRecoilState(activeTaskAtom);
 
   return (
     <Space direction="vertical" className="section" size="small">
@@ -53,27 +55,9 @@ export const SectionOne = () => {
               value={maxTime}
               onChange={setMaxTime}
             />
-            <Button
-              loading={isLoading}
-              onClick={async () => {
-                setIsLoading(true);
-                const result = await api("1.1", {
-                  houses: selectedHouses,
-                  infra: selectedInfra,
-                  maxTime: maxTime,
-                  maxDistance: maxDistance
-                });
-                setIsLoading(false);
-
-                if (result) {
-                  setPaths(result.paths);
-                  set11(result);
-                  setTask("1.1b");
-                }
-              }}
-            >
+            <Button loading={isLoading} type="primary" onClick={() => {}}>
               Найти
-          </Button>
+            </Button>
           </Space>
           <Divider>Или</Divider>
           <Button
@@ -85,8 +69,12 @@ export const SectionOne = () => {
                 infra: selectedInfra,
               });
               setIsLoading(false);
-              setPaths(result.paths);
-              set11(result);
+
+              if (result) {
+                setPaths(result.paths);
+                set11(result);
+                setTask("1.1a");
+              }
             }}
           >
             Найти независимо от расстояния
