@@ -23,6 +23,7 @@ import {
   task22ClusterTrees,
   task22CentroidPositions,
 } from "../../store/task22";
+import { task21Tree } from "../../store/task21";
 
 const colors = [
   "#ff4d4f",
@@ -56,6 +57,11 @@ const getColoredSvg = (color) => {
   return new Icon({ iconUrl: myIconUrl, iconSize: 50 });
 };
 
+const Task21 = () => {
+  const path = useRecoilValue(task21Tree);
+  return path && <Polyline positions={path} />;
+};
+
 const Task22 = () => {
   const centroidTree = useRecoilValue(task22CentroidTree);
   const centroidPos = useRecoilValue(task22CentroidPositions);
@@ -84,6 +90,7 @@ const Task22 = () => {
 const task2MapMarkers = {
   "1.1a": Task11a,
   "1.1b": Task11b,
+  "2.1": Task21,
   "2.2": Task22,
 };
 
