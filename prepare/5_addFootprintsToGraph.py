@@ -77,6 +77,8 @@ for house in houseRawNodes:
         "osmid": house['osmid'],
         "geometry": house['geometry'],
         "tag": house['tag'],
+        "name": house['name'],
+        "addr": house['addr'],
         "highway": None,
     })
     
@@ -86,9 +88,17 @@ for node in new_nodes:
         y=node["geometry"].y, 
         x=node["geometry"].x, 
         osmid=node["osmid"], 
-        tag=node["tag"]
+        tag=node["tag"],
+        name=node["name"],
+        addr=node["addr"]
     )
 
 print('saving full graph')
-G = ox.save_load.save_graphml(G, 'city.graphml')
+ox.save_load.save_graphml(G, 'city.graphml')
+
+fullGraphDict = {}
+for node in G.nodes:
+    fullGraphDict[node] = G.nodes[node]
+with open("../ui/src/graph.json", "w") as fp:
+    json.dump(fullGraphDict , fp)
 print('done')

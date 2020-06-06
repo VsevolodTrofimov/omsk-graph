@@ -73,6 +73,8 @@ csv()
               osmid: parseInt(house.id),
               geometry: house.geometry,
               distance: minD,
+              addr: `${house["addr:street"]}, д. ${house["addr:housenumber"]}`,
+              name: house["name"],
               tag,
               toGeometry: closest.geometry,
               closest: parseInt(closest.osmid),

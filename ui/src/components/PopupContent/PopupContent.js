@@ -135,37 +135,54 @@ export default function PopupContent() {
     selectedHouses.includes(popupHouse) || selectedInfra.includes(popupHouse);
 
   return (
-    <div>
+    <React.Fragment>
       {Component && <Component />}
       {Component && popupHouse && <Divider style={{ margin: "12px 0" }} />}
-      {isSelected && popupHouse ? (
-        <div>
-          <Button
-            onClick={() => {
-              setSelectedHouses(selectedHouses.filter((x) => x !== popupHouse));
-              setSelectedInfra(selectedInfra.filter((x) => x !== popupHouse));
-              setPopUpHouse(null);
-            }}
-          >
-            Убрать из выбранных {popupHouse}
-          </Button>
-        </div>
-      ) : (
-        <div>
-          <Button
-            onClick={() => {
-              if (graph[popupHouse].tag === "apartments") {
-                setSelectedHouses([...selectedHouses, popupHouse]);
-              } else {
-                setSelectedInfra([...selectedInfra, popupHouse]);
-              }
-              setPopUpHouse(null);
-            }}
-          >
-            Выбрать {popupHouse}
-          </Button>
-        </div>
+      {popupHouse && (
+        <Space direction="vertical" size="small">
+          {(graph[popupHouse].name || graph[popupHouse].addr !== ", д. ") && (
+            <Descriptions bordered layout="horizontal" column={1} size="small">
+              {graph[popupHouse].name && (
+                <Descriptions.Item label="Название">
+                  {graph[popupHouse].name}
+                </Descriptions.Item>
+              )}
+              {graph[popupHouse].addr !== ", д. " && (
+                <Descriptions.Item label="Адрес">
+                  {graph[popupHouse].addr}
+                </Descriptions.Item>
+              )}
+            </Descriptions>
+          )}
+          {console.log(graph[popupHouse].addr)}
+          {isSelected ? (
+            <Button
+              onClick={() => {
+                setSelectedHouses(
+                  selectedHouses.filter((x) => x !== popupHouse)
+                );
+                setSelectedInfra(selectedInfra.filter((x) => x !== popupHouse));
+                setPopUpHouse(null);
+              }}
+            >
+              Убрать из выбранных {popupHouse}
+            </Button>
+          ) : (
+            <Button
+              onClick={() => {
+                if (graph[popupHouse].tag === "apartments") {
+                  setSelectedHouses([...selectedHouses, popupHouse]);
+                } else {
+                  setSelectedInfra([...selectedInfra, popupHouse]);
+                }
+                setPopUpHouse(null);
+              }}
+            >
+              Выбрать {popupHouse}
+            </Button>
+          )}
+        </Space>
       )}
-    </div>
+    </React.Fragment>
   );
 }
