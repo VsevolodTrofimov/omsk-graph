@@ -6,18 +6,20 @@ import numpy as np
 
 def solve_13(graph, houses, infra, speed=40):
     infra_len_paths = defaultdict()
+    objRoutes = {}
     for obj in infra:
         routes = lib.getFromSingleToManyPaths(graph, obj, houses, speed)
         length = sum(route['length'] for route in routes.values())
         infra_len_paths[obj] = length
         routes = [route['route'] for route in routes.values()]
+        objRoute[obj] = routes
 
     id_min_length = min(infra_len_paths, key=infra_len_paths.get)
     
     return {
         'id': id_min_length,
         'length': infra_len_paths[id_min_length],
-        'routes': routes
+        'routes': objRoutes[id_min_length]
     }
 
 def solve_14(graph, houses, infra, speed=40):
