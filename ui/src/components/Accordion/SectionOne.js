@@ -123,13 +123,8 @@ export const SectionOne = () => {
           </Radio.Group>
         </Panel>
 
-
-
-
-
-        <Panel header="1.3 Сумма кратчайших расстояний" key="3" />
-        <Panel header="1.4 Найти минимальное дерево кратчайших путей" key="4" />
-      </Collapse >
-    </Space >
+        <Panel header="1.3-1.4 Дерево кратчайших путей" key="3"></Panel>
+      </Collapse>
+    </Space>
   );
 };
