@@ -7,15 +7,22 @@ import {
   InputNumber,
   Divider,
   Radio,
+  Descriptions,
 } from "antd";
 import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
-import { pathsAtom, startHouseState, pathTypeState } from "../../store/paths";
+import {
+  pathsAtom,
+  startHouseState,
+  pathTypeState,
+  popupHouseState,
+} from "../../store/paths";
 import { task11Atom, maxTimeState, maxDistanceState } from "../../store/task11";
 import { task12Atom } from "../../store/task12";
 import { activeTaskAtom } from "../../store/general";
+import { task14Atom } from "../../store/task14";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
@@ -31,7 +38,9 @@ export const SectionOne = () => {
   const setStartHouse = useSetRecoilState(startHouseState);
   const set11 = useSetRecoilState(task11Atom);
   const set12 = useSetRecoilState(task12Atom);
+  const [task14, set14] = useRecoilState(task14Atom);
   const setTask = useSetRecoilState(activeTaskAtom);
+  const setPopupHouse = useSetRecoilState(popupHouseState);
   const [pathType, setPathType] = useRecoilState(pathTypeState);
 
   return (
@@ -124,9 +133,43 @@ export const SectionOne = () => {
             <Radio.Button value="round"> Туда-обратно </Radio.Button>
           </Radio.Group>
         </Panel>
-        <Panel header="1.3 Сумма кратчайших расстояний" key="3" />
-        <Panel header="1.4 Найти минимальное дерево кратчайших путей" key="4" />
-      </Collapse >
-    </Space >
+
+        <Panel header="1.3 Сумма кратчайших расстояний" key="3"></Panel>
+
+        <Panel header="1.4 Найти минимальное дерево кратчайших путей" key="4">
+          <Space direction="vertical">
+            <Button
+              loading={isLoading}
+              type="primary"
+              onClick={async () => {
+                set14(null);
+
+                setIsLoading(true);
+                const result = await api("1.4", {
+                  houses: selectedHouses,
+                  infra: selectedInfra,
+                });
+                setIsLoading(false);
+
+                if (result) {
+                  set14(result);
+                  setPopupHouse(result.id);
+                  setTask("1.4");
+                }
+              }}
+            >
+              Найти
+            </Button>
+            {task14 && (
+              <Descriptions layout="horizontal" column={1} bordered>
+                <Descriptions.Item label="Длина дерева">
+                  {task14.weight.toFixed(0)}м
+                </Descriptions.Item>
+              </Descriptions>
+            )}
+          </Space>
+        </Panel>
+      </Collapse>
+    </Space>
   );
 };

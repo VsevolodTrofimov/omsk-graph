@@ -4,27 +4,41 @@ from clustering import *
 import numpy as np
 
 
-def solve_13_14(graph, houses, infra, speed=40):
+def solve_13(graph, houses, infra, speed=40):
+    infra_len_paths = defaultdict()
+    for obj in infra:
+        routes = lib.getFromSingleToManyPaths(graph, obj, houses, speed)
+        length = sum(route['length'] for route in routes.values())
+        infra_len_paths[obj] = length
+        routes = [route['route'] for route in routes.values()]
+
+    id_min_length = min(infra_len_paths, key=infra_len_paths.get)
+    
+    return {
+        'id': id_min_length,
+        'length': infra_len_paths[id_min_length],
+        'routes': routes
+    }
+
+def solve_14(graph, houses, infra, speed=40):
     infra_len_paths = defaultdict()
     infra_weight_tree = defaultdict()
+    objTree = {}
     for obj in infra:
         routes = lib.getFromSingleToManyPaths(graph, obj, houses, speed)
         length = sum(route['length'] for route in routes.values())
         infra_len_paths[obj] = length
         routes = [route['route'] for route in routes.values()]
         tree = lib.routes_to_tree(graph, routes)
+        objTree[obj] = tree
         infra_weight_tree[obj] = tree['weight']
+    
     id_min_weight = min(infra_weight_tree, key=infra_weight_tree.get)
-    id_min_length = min(infra_len_paths, key=infra_len_paths.get)
+
     return {
-        '1.3': {
-            'id': id_min_length,
-            'length': infra_len_paths[id_min_length]
-        },
-        '1.4': {
-            'id': id_min_weight,
-            'weight': infra_weight_tree[id_min_weight]
-        }
+        'id': id_min_weight,
+        'weight': infra_weight_tree[id_min_weight],
+        'tree': objTree[id_min_weight]
     }
 
 

@@ -23,9 +23,7 @@ import {
 } from "../../store/task11";
 import { splitNodes } from "../../store/selection";
 
-import {
-  task12MinPathMaxObject,
-} from "../../store/task12";
+import { task12MinPathMaxObject } from "../../store/task12";
 
 import "./CityMap.css";
 import { activeTaskAtom } from "../../store/general";
@@ -36,6 +34,7 @@ import {
   task22Atom,
 } from "../../store/task22";
 import { task21Tree } from "../../store/task21";
+import { task14Tree } from "../../store/task14";
 
 const colors = [
   "#ff4d4f",
@@ -93,6 +92,11 @@ const Task13 = () => {
       return <Polyline positions={currentPath} />;
     })
     : null;
+}
+
+const Task14 = () => {
+  const path = useRecoilValue(task14Tree);
+  return path && <Polyline positions={path} />;
 };
 
 const Task21 = () => {
@@ -134,6 +138,7 @@ const task2MapMarkers = {
   "1.1a": Task11a,
   "1.1b": Task11b,
   "1.2": Task12,
+  "1.4": Task14,
   "2.1": Task21,
   "2.2": Task22,
 };
