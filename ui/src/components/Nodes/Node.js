@@ -29,15 +29,15 @@ const activeObjectIcons = {
 
 const getColoredSvg = (color) => {
   let svgString = `
-    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 48" width="24">
-      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="${color}" />
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+      <circle cx="12" cy="12" r="8"  fill="${color}"/>
     </svg>`;
   let myIconUrl = encodeURI("data:image/svg+xml," + svgString).replace(
     "#",
     "%23"
   );
 
-  return new Icon({ iconUrl: myIconUrl, iconSize: 50 });
+  return new Icon({ iconUrl: myIconUrl, iconSize: 12 });
 };
 
 const passiveObjectIcons = {
@@ -53,7 +53,7 @@ const passiveObjectIcons = {
     iconUrl: "/money_passive.png",
     iconSize: [25, 25],
   }),
-  undefined: getColoredSvg("#f00"),
+  undefined: getColoredSvg("#000"),
 };
 
 export const Node = (props) => {

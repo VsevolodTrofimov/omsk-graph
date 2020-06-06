@@ -198,7 +198,7 @@ export const CityMap = () => {
         setRoads(nextRoads);
       }
     },
-    [noRoads, setRoads, roadNodes]
+    [setRoads, roadNodes]
   );
 
   return (
