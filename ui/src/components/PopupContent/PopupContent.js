@@ -1,5 +1,5 @@
 import React from "react";
-import { Radio } from "antd";
+import { Radio, Space } from "antd";
 import { useRecoilState, useSetRecoilState, useRecoilValue } from "recoil";
 import graph from "../../graph.json";
 
@@ -15,9 +15,11 @@ const Task11a = () => {
   const [popupHouseId, setPopupHouseId] = useRecoilState(popupHouseState);
   const setStartHouse = useSetRecoilState(startHouseState);
 
+  const isHouse = graph[popupHouseId].tag === "apartments";
+
   return (
-    <React.Fragment>
-      Путь до ближайшего
+    <Space direction="vertical" size="small">
+      Путь до ближайшего {isHouse ? "объекта" : "дома"}
       <Radio.Group
         onChange={(e) => {
           setPathType(e.target.value);
@@ -26,16 +28,16 @@ const Task11a = () => {
         }}
         value={pathType}
       >
-        {graph[popupHouseId].tag === "apartments" ? (
+        {isHouse ? (
           <React.Fragment>
             <Radio.Button value="to">Туда</Radio.Button>
             <Radio.Button value="round">Туда-обратно</Radio.Button>
           </React.Fragment>
         ) : (
-          <Radio.Button value="from">Обратно</Radio.Button>
+          <Radio.Button value="from">Туда</Radio.Button>
         )}
       </Radio.Group>
-    </React.Fragment>
+    </Space>
   );
 };
 
