@@ -11,6 +11,17 @@ export const task11Atom = atom({
   default: null,
 });
 
+export const maxDistanceState = atom({
+  key: "maxDistanceState",
+  default: 4000,
+});
+
+export const maxTimeState = atom({
+  key: "maxTimeState",
+  default: 15,
+});
+
+
 export const task11ClosesObject = selector({
   key: "getClosestObjState",
   get: ({ get }) => {
