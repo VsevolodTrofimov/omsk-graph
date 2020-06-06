@@ -57,9 +57,9 @@ const Task11b = () => {
   const pathType = useRecoilValue(pathTypeState);
   return path
     ? path.map((node) => {
-        const currentPath = getPathBetween(startHouse, node, pathType, paths);
-        return <Polyline positions={currentPath} />;
-      })
+      const currentPath = getPathBetween(startHouse, node, pathType, paths);
+      return <Polyline positions={currentPath} />;
+    })
     : null;
 };
 
@@ -80,6 +80,19 @@ const Task12 = () => {
   const path = useRecoilValue(task12MinPathMaxObject);
   return path && <Polyline positions={path} />;
 };
+
+const Task13 = () => {
+  const startHouse = useRecoilValue(startHouseState);
+  const path = useRecoilValue(task11ObjectsInRadius);
+  const paths = useRecoilValue(pathsAtom);
+  const pathType = useRecoilValue(pathTypeState);
+  return path
+    ? path.map((node) => {
+      const currentPath = getPathBetween(startHouse, node, pathType, paths);
+      return <Polyline positions={currentPath} />;
+    })
+    : null;
+}
 
 const Task14 = () => {
   const path = useRecoilValue(task14Tree);
