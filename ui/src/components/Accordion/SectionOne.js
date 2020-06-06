@@ -13,6 +13,7 @@ import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
 import { pathsAtom } from "../../store/paths";
 import { task11Atom } from "../../store/task11";
+import { activeTaskAtom } from "../../store/general";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
@@ -26,6 +27,7 @@ export const SectionOne = () => {
   const selectedInfra = useRecoilValue(selectedInfraState);
   const setPaths = useSetRecoilState(pathsAtom);
   const set11 = useSetRecoilState(task11Atom);
+  const setTask = useSetRecoilState(activeTaskAtom);
 
   return (
     <Space direction="vertical" className="section" size="small">
@@ -71,6 +73,7 @@ export const SectionOne = () => {
               if (result) {
                 setPaths(result.paths);
                 set11(result);
+                setTask("1.1a");
               }
             }}
           >
