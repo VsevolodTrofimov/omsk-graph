@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_cors import CORS
 from solve_11 import solve_11
 from solve_12 import solve_12
-from solve_13_24 import solve_13_14, solve_21, solve_22_24
+from solve_13_24 import solve_13, solve_14, solve_21, solve_22_24
 import lib
 
 app = Flask(__name__)
@@ -35,11 +35,21 @@ def task_12():
     )
 
 
-@app.route('/1.3-1.4', methods=['POST'])
-def task_13_14():
+@app.route('/1.3', methods=['POST'])
+def task_13():
     params = request.json
 
-    return solve_13_14(
+    return solve_13(
+        G, 
+        params['houses'], 
+        params['infra']
+    )
+
+@app.route('/1.4', methods=['POST'])
+def task_14():
+    params = request.json
+
+    return solve_14(
         G, 
         params['houses'], 
         params['infra']
