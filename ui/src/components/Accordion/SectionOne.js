@@ -72,6 +72,9 @@ export const SectionOne = () => {
               type="primary"
               loading={isLoading}
               onClick={async () => {
+                setTask(null);
+                set11(null);
+
                 setIsLoading(true);
                 const result = await api("1.1", {
                   houses: selectedHouses,
@@ -96,6 +99,7 @@ export const SectionOne = () => {
           <Button
             loading={isLoading}
             onClick={async () => {
+              setTask(null);
               set11(null);
 
               setIsLoading(true);
@@ -121,6 +125,7 @@ export const SectionOne = () => {
             <Radio.Group
               value={pathType}
               onChange={async (e) => {
+                setTask(null);
                 set12(null);
 
                 setIsLoading(true);
@@ -153,6 +158,7 @@ export const SectionOne = () => {
               type="primary"
               loading={isLoading}
               onClick={async () => {
+                setTask(null);
                 set13(null);
 
                 setIsLoading(true);
@@ -188,6 +194,7 @@ export const SectionOne = () => {
               loading={isLoading}
               type="primary"
               onClick={async () => {
+                setTask(null);
                 set14(null);
 
                 setIsLoading(true);

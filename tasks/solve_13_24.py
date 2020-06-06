@@ -62,7 +62,7 @@ def solve_22_24(graph, houses, infra, k, speed=40):
     # 2.2)
     houses_coords = np.array([(graph.nodes[h]['y'], graph.nodes[h]['x']) for h in houses])
     dist_matrix = np.array([[get_distance(p[0], p[1], pp[0], pp[1]) for pp in houses_coords] for p in houses_coords])
-    plot_dendrogram(dist_matrix, truncate_mode='level')
+    plot_dendrogram(dist_matrix, houses, truncate_mode='level')
     model = get_clusters(dist_matrix, k=k)
     centroids = []
     trees = []

@@ -50,6 +50,7 @@ export const SectionTwo = () => {
         ),
       });
     } else {
+      setTask(null);
       setTask21(null);
 
       setIsLoading(true);
@@ -88,6 +89,7 @@ export const SectionTwo = () => {
         ),
       });
     } else {
+      setTask(null);
       setTask22(null);
 
       setIsLoading(true);

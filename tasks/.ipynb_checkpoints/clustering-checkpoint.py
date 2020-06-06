@@ -25,7 +25,7 @@ def get_centroid(cluster):
     return np.argmin([get_distance(*coords, lat, long) for lat, long in cluster])
 
 
-def plot_dendrogram(dist_matrix, houses, **kwargs):
+def plot_dendrogram(dist_matrix, **kwargs):
     model = AgglomerativeClustering(distance_threshold=0, linkage='complete', n_clusters=None)
     model.fit(dist_matrix)
     counts = np.zeros(model.children_.shape[0])
@@ -42,7 +42,7 @@ def plot_dendrogram(dist_matrix, houses, **kwargs):
     linkage_matrix = np.column_stack([model.children_, model.distances_,
                                       counts]).astype(float)
 
-    dendrogram(linkage_matrix, orientation="left", labels=houses, leaf_font_size=6, **kwargs)
+    dendrogram(linkage_matrix, **kwargs)
     plt.xlabel("Index of point")
     plt.ylabel("Distance")
     #plt.show()
