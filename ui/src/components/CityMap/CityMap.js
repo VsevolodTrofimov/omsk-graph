@@ -24,6 +24,15 @@ import {
   task22CentroidPositions,
 } from "../../store/task22";
 
+const colors = [
+  "#ff4d4f",
+  "#9254de",
+  "#ff7a45",
+  "#36cfc9",
+  "#bae637",
+  "#f759ab",
+];
+
 const Task11a = () => {
   const path = useRecoilValue(task11PathToClosestObject);
   return path && <Polyline positions={path} />;
@@ -33,15 +42,6 @@ const Task11b = () => {
   const path = useRecoilValue(task11PathToClosestObject);
   return path && <Polyline positions={path} />;
 };
-
-const colors = [
-  "#ff4d4f",
-  "#9254de",
-  "#ff7a45",
-  "#36cfc9",
-  "#bae637",
-  "#f759ab",
-];
 
 const getColoredSvg = (color) => {
   let svgString = `
