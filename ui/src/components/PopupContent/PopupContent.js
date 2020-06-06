@@ -154,7 +154,6 @@ export default function PopupContent() {
               )}
             </Descriptions>
           )}
-          {console.log(graph[popupHouse].addr)}
           {isSelected ? (
             <Button
               onClick={() => {

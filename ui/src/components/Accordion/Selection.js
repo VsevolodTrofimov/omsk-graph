@@ -1,23 +1,34 @@
 import React, { useState } from "react";
 import { Collapse, Space, Typography, Button, InputNumber, Tag } from "antd";
-import { useRecoilState } from "recoil";
+import { useRecoilState, useSetRecoilState } from "recoil";
 
 import {
   selectedInfraState,
   selectedHousesState,
   getRandom,
 } from "../../store/selection";
+import { popupHouseState } from "../../store/paths";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
 
-const TagList = (props) => (
-  <div className="tagList">
-    {props.tags.map((tag) => (
-      <Tag key={tag}>{tag}</Tag>
-    ))}
-  </div>
-);
+const TagList = (props) => {
+  const setPopUpHouse = useSetRecoilState(popupHouseState);
+
+  return (
+    <div className="tagList">
+      {props.tags.length > 0 ? (
+        props.tags.map((tag) => (
+          <Tag key={tag} onClick={() => setPopUpHouse(tag)}>
+            {tag}
+          </Tag>
+        ))
+      ) : (
+        <Typography.Text>Ничего не выбрано</Typography.Text>
+      )}
+    </div>
+  );
+};
 
 export const Selection = () => {
   const [selectedHouses, setSelectedHouses] = useRecoilState(

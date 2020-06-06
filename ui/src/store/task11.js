@@ -26,7 +26,6 @@ export const pathLimitState = atom({
   default: null,
 });
 
-
 export const task11ClosesObject = selector({
   key: "getClosestObjState",
   get: ({ get }) => {
@@ -57,7 +56,6 @@ export const task11PathToClosestObject = selector({
 
     return null;
   },
-
 });
 
 export const task11ObjectsInRadius = selector({
@@ -68,10 +66,8 @@ export const task11ObjectsInRadius = selector({
     const pathLimit = get(pathLimitState);
     const pathType = get(pathTypeState);
     if (activeHouseId && pathType && task11 && pathLimit) {
-      console.log(task11['inRange'][pathType][pathLimit][activeHouseId]);
-      return task11['inRange'][pathType][pathLimit][activeHouseId];
+      return task11["inRange"][pathType][pathLimit][activeHouseId];
     }
     return null;
   },
 });
-
