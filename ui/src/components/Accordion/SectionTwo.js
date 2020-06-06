@@ -113,12 +113,7 @@ export const SectionTwo = () => {
               Построить дерево путей
             </Button>
             {task21 && (
-              <Descriptions
-                title="Результаты"
-                layout="horizontal"
-                column={1}
-                bordered
-              >
+              <Descriptions layout="horizontal" column={1} bordered>
                 <Descriptions.Item label="Длина дерева">
                   {task21.treeLength.toFixed(0)} м
                 </Descriptions.Item>
