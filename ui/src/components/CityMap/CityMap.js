@@ -67,6 +67,11 @@ const getColoredSvg = (color) => {
   return new Icon({ iconUrl: myIconUrl, iconSize: 50 });
 };
 
+// const Task12 = () => {
+//   const path = useRecoilValue(task12MinPathToMaxObject);
+//   return path && <Polyline positions={path} />;
+// };
+
 const Task21 = () => {
   const path = useRecoilValue(task21Tree);
   return path && <Polyline positions={path} />;
