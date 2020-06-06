@@ -35,6 +35,7 @@ import {
 } from "../../store/task22";
 import { task21Tree } from "../../store/task21";
 import { task14Tree } from "../../store/task14";
+import { task13ShortestDistances } from "../../store/task13";
 
 const colors = [
   "#ff4d4f",
@@ -82,13 +83,12 @@ const Task12 = () => {
 };
 
 const Task13 = () => {
-  const startHouse = useRecoilValue(startHouseState);
-  const path = useRecoilValue(task11ObjectsInRadius);
-  const paths = useRecoilValue(pathsAtom);
-  const pathType = useRecoilValue(pathTypeState);
+  const path = useRecoilValue(task13ShortestDistances);
+  console.log(path, 13);
   return path
-    ? path.map((node) => {
-      const currentPath = getPathBetween(startHouse, node, pathType, paths);
+    ? path.map((currentPath) => {
+
+      // const currentPath = getPathBetween(startHouse, node, pathType, paths);
       return <Polyline positions={currentPath} />;
     })
     : null;
@@ -138,6 +138,7 @@ const task2MapMarkers = {
   "1.1a": Task11a,
   "1.1b": Task11b,
   "1.2": Task12,
+  "1.3": Task13,
   "1.4": Task14,
   "2.1": Task21,
   "2.2": Task22,

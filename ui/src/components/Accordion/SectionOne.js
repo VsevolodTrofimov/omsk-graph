@@ -23,6 +23,7 @@ import { task11Atom, maxTimeState, maxDistanceState } from "../../store/task11";
 import { task12Atom } from "../../store/task12";
 import { activeTaskAtom } from "../../store/general";
 import { task14Atom } from "../../store/task14";
+import { task13Atom } from "../../store/task13";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
@@ -38,6 +39,7 @@ export const SectionOne = () => {
   const setStartHouse = useSetRecoilState(startHouseState);
   const set11 = useSetRecoilState(task11Atom);
   const set12 = useSetRecoilState(task12Atom);
+  const [task13, set13] = useRecoilState(task13Atom);
   const [task14, set14] = useRecoilState(task14Atom);
   const setTask = useSetRecoilState(activeTaskAtom);
   const setPopupHouse = useSetRecoilState(popupHouseState);
@@ -134,7 +136,36 @@ export const SectionOne = () => {
           </Radio.Group>
         </Panel>
 
-        <Panel header="1.3 Сумма кратчайших расстояний" key="3"></Panel>
+        <Panel header="1.3 Сумма кратчайших расстояний" key="3">
+          <Button
+            type="primary"
+            loading={isLoading}
+            onClick={async () => {
+              setIsLoading(true);
+              const result = await api("1.3", {
+                houses: selectedHouses,
+                infra: selectedInfra,
+              });
+              setIsLoading(false);
+              if (result) {
+                setPaths(result.paths);
+                setStartHouse(null);
+                set13(result);
+                setTask("1.3");
+
+              }
+            }}
+          >
+            Найти
+            </Button>
+          {task13 && (
+            <Descriptions layout="horizontal" column={1} bordered>
+              <Descriptions.Item label="Сумма кратчайших расстояний">
+                {task13.length.toFixed(0)}м
+                </Descriptions.Item>
+            </Descriptions>
+          )}
+        </Panel>
 
         <Panel header="1.4 Найти минимальное дерево кратчайших путей" key="4">
           <Space direction="vertical">
