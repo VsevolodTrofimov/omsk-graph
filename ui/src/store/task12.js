@@ -1,9 +1,5 @@
 import { atom, selector } from "recoil";
-import {
-  pathTypeState,
-  getPathBetween,
-  pathsAtom,
-} from "./paths";
+import { pathTypeState, getPathBetween, pathsAtom } from "./paths";
 
 export const task12Atom = atom({
   key: "task12",
@@ -16,9 +12,13 @@ export const task12MinPathMaxObject = selector({
     const task12 = get(task12Atom);
     const pathType = get(pathTypeState);
     const paths = get(pathsAtom);
-    if (pathType && task12) {
-      return getPathBetween(task12["minmax"][pathType]["start"],
-        task12["minmax"][pathType]["end"], pathType, paths);
+    if (pathType && task12 && paths) {
+      return getPathBetween(
+        task12["minmax"][pathType]["start"],
+        task12["minmax"][pathType]["end"],
+        pathType,
+        paths
+      );
     }
     return null;
   },

@@ -8,6 +8,7 @@ import {
   Divider,
   Radio,
   Descriptions,
+  Spin,
 } from "antd";
 import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 
@@ -95,6 +96,8 @@ export const SectionOne = () => {
           <Button
             loading={isLoading}
             onClick={async () => {
+              set11(null);
+
               setIsLoading(true);
               const result = await api("1.1", {
                 houses: selectedHouses,
@@ -114,26 +117,34 @@ export const SectionOne = () => {
           </Button>
         </Panel>
         <Panel header="1.2 Минимальное расстояние до дальнего дома" key="2">
-          <Radio.Group
-            value={pathType}
-            onChange={async (e) => {
-              setPathType(e.target.value);
-              const result = await api("1.2", {
-                houses: selectedHouses,
-                infra: selectedInfra,
-              });
-              if (result) {
-                setPaths(result.paths);
-                setStartHouse(null);
-                set12(result);
-                setTask("1.2");
-              }
-            }}
-          >
-            <Radio.Button value="to"> Туда </Radio.Button>
-            <Radio.Button value="from"> Обратно </Radio.Button>
-            <Radio.Button value="round"> Туда-обратно </Radio.Button>
-          </Radio.Group>
+          <Space>
+            <Radio.Group
+              value={pathType}
+              onChange={async (e) => {
+                set12(null);
+
+                setIsLoading(true);
+                setPathType(e.target.value);
+                const result = await api("1.2", {
+                  houses: selectedHouses,
+                  infra: selectedInfra,
+                });
+                setIsLoading(false);
+
+                if (result) {
+                  setPaths(result.paths);
+                  setStartHouse(null);
+                  set12(result);
+                  setTask("1.2");
+                }
+              }}
+            >
+              <Radio.Button value="to"> Туда </Radio.Button>
+              <Radio.Button value="from"> Обратно </Radio.Button>
+              <Radio.Button value="round"> Туда-обратно </Radio.Button>
+            </Radio.Group>
+            {isLoading && <Spin />}
+          </Space>
         </Panel>
 
         <Panel header="1.3 Сумма кратчайших расстояний" key="3">
@@ -142,12 +153,15 @@ export const SectionOne = () => {
               type="primary"
               loading={isLoading}
               onClick={async () => {
+                set13(null);
+
                 setIsLoading(true);
                 const result = await api("1.3", {
                   houses: selectedHouses,
                   infra: selectedInfra,
                 });
                 setIsLoading(false);
+
                 if (result) {
                   setPaths(result.paths);
                   setStartHouse(null);

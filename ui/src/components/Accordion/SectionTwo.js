@@ -50,6 +50,8 @@ export const SectionTwo = () => {
         ),
       });
     } else {
+      setTask21(null);
+
       setIsLoading(true);
       const result = await api("2.1", {
         houses: selectedHouses,
@@ -57,6 +59,7 @@ export const SectionTwo = () => {
         clusterCount: clusterCount,
       });
       setIsLoading(false);
+
       if (result) {
         setTask21(result);
         setTask("2.1");
@@ -85,6 +88,8 @@ export const SectionTwo = () => {
         ),
       });
     } else {
+      setTask22(null);
+
       setIsLoading(true);
       const result = await api("2.2-2.4", {
         houses: selectedHouses,
@@ -92,6 +97,7 @@ export const SectionTwo = () => {
         clusterCount: clusterCount,
       });
       setIsLoading(false);
+
       if (result) {
         setTask22(result);
         setTask("2.2");
