@@ -7,20 +7,20 @@ import {
   InputNumber,
   Divider,
 } from "antd";
-import { useRecoilValue, useSetRecoilState } from "recoil";
+import { useRecoilValue, useSetRecoilState, useRecoilState } from "recoil";
 
 import { api } from "../../api";
 import { selectedInfraState, selectedHousesState } from "../../store/selection";
 import { pathsAtom } from "../../store/paths";
-import { task11Atom } from "../../store/task11";
+import { task11Atom, maxTimeState, maxDistanceState } from "../../store/task11";
 import { activeTaskAtom } from "../../store/general";
 
 const { Panel } = Collapse;
 const { Text } = Typography;
 
 export const SectionOne = () => {
-  const [maxDistance, setMaxDistance] = useState(4000);
-  const [maxTime, setMaxTime] = useState(15);
+  const [maxDistance, setMaxDistance] = useRecoilState(maxDistanceState);
+  const [maxTime, setMaxTime] = useRecoilState(maxTimeState);
   const [isLoading, setIsLoading] = useState(false);
 
   const selectedHouses = useRecoilValue(selectedHousesState);
@@ -55,7 +55,26 @@ export const SectionOne = () => {
               value={maxTime}
               onChange={setMaxTime}
             />
-            <Button loading={isLoading} type="primary" onClick={() => {}}>
+            <Button
+              type="primary"
+              loading={isLoading}
+              onClick={async () => {
+                setIsLoading(true);
+                const result = await api("1.1", {
+                  houses: selectedHouses,
+                  infra: selectedInfra,
+                  maxTime: maxTime,
+                  maxDistance: maxDistance,
+                });
+                setIsLoading(false);
+
+                if (result) {
+                  setPaths(result.paths);
+                  set11(result);
+                  setTask("1.1b");
+                }
+              }}
+            >
               Найти
             </Button>
           </Space>
